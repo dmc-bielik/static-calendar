@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WHDPYWEDG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-2WHDPYWEDG');
+    </script>
+    <title>Cultural Awareness Calendar</title>
+
+    <!-- STUFF I NEED TO CHANGE
+    <%= favicon_link_tag('favicon.ico', rel:"icon") %>
+    <%= favicon_link_tag('safari-pinned-tab.svg', rel:"mask-icon") %>
+    <%= favicon_link_tag('apple-touch-icon.png', rel:"apple-touch-icon") %>
+    -->
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+    
+    
+  <!-- Poppins font tags -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-sm fixed-top bg-white">
+        <div class="container-fluid">
+          <a href="#">
+              <img src="images/logo.png" width="25vw" max-width="100px">
+          </a>
+          <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 px-3 mb-lg-0">
+              
+              <li class="nav-item menu-item px-2">
+                 <a href="#" class="nav-link"> Current Month</a>  
+              </li>
+              
+              <li class="nav-item menu-item px-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Download PDF Version
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="https://forms.gle/4GV7UnfHUh9vJnKy9" class="dropdown-item" target="_blank">2024 Calendar</a>
+                <a href="https://forms.gle/4GV7UnfHUh9vJnKy9" class="dropdown-item" target="_blank">2025 Calendar</a>            
+                  
+                </ul>
+              </li>
+            
+              <li class="nav-item menu-item px-2">
+                <a href="/about.html" class="nav-link">About DMC</a> 
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style="padding-bottom: 30px">
+      </div>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+  </head>
+  
+  <body>
+    
+
+    <div id="desktop" style="display: none">
+        <div>
+          <img src="images/title.png" style="width: 80vw; max-width: 450px; padding-top: 10px; padding-bottom: 1.5rem; display: block; margin: auto;">
+        </div>
+        <div id="tabDisplay" class="mx-auto" style="max-width: 1080px;">
+          <ul class="nav nav-tabs"  id="myTab" role="tablist">
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="january-tab" data-bs-toggle="tab" data-bs-target="#january" type="button" role="tab" aria-controls="january" aria-selected="false">January</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="february-tab" data-bs-toggle="tab" data-bs-target="#february" type="button" role="tab" aria-controls="february" aria-selected="false">February</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="march-tab" data-bs-toggle="tab" data-bs-target="#march" type="button" role="tab" aria-controls="march" aria-selected="false">March</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="april-tab" data-bs-toggle="tab" data-bs-target="#april" type="button" role="tab" aria-controls="april" aria-selected="false">April</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="may-tab" data-bs-toggle="tab" data-bs-target="#may" type="button" role="tab" aria-controls="may" aria-selected="false">May</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="june-tab" data-bs-toggle="tab" data-bs-target="#june" type="button" role="tab" aria-controls="june" aria-selected="false">June</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="july-tab" data-bs-toggle="tab" data-bs-target="#july" type="button" role="tab" aria-controls="july" aria-selected="false">July</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="august-tab" data-bs-toggle="tab" data-bs-target="#august" type="button" role="tab" aria-controls="august" aria-selected="true">August</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939; padding-left: 10px;" id="september-tab" data-bs-toggle="tab" data-bs-target="#september" type="button" role="tab" aria-controls="september" aria-selected="false">September</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939;" id="october-tab" data-bs-toggle="tab" data-bs-target="#october" type="button" role="tab" aria-controls="october" aria-selected="false">October</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939; padding-left: 12px;" id="november-tab" data-bs-toggle="tab" data-bs-target="#november" type="button" role="tab" aria-controls="november" aria-selected="false">November</button>
+            </li>
+            <li class="nav-item month-tab" role="presentation">
+              <button class="nav-link month-tab" style="color: #393939; padding-left: 12px;" id="december-tab" data-bs-toggle="tab" data-bs-target="#december" type="button" role="tab" aria-controls="december" aria-selected="false">December</button>
+            </li>
+          
+          </ul>
+          <div class="tab-content border-start border-end border-bottom border-left shadow-sm" style="padding-bottom: 5%;" id="myTabContent" >
+            <div class="tab-pane fade" id="january" role="tabpanel" aria-labelledby="january-tab">
+              <div class="top-container">
+                <section data-firstday="7" class="mx-auto">
+                  <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
+                  <ol class="days">
+                    <li data-day="3"><time>1</time></li>
+                    <li><time>2</time></li>
+                    <li><time>3</time></li>
+                    <li><time>4</time></li>
+                    <li><time>5</time></li>
+                    <li><time>6</time></li>
+                    <li><time>7</time></li>
+                    <li><time>8</time></li>
+                    <li><time>9</time></li>
+                    <li><time>10</time></li>
+                    <li><time>11</time></li>
+                    <li><time>12</time></li>
+                    <li><time>13</time></li>
+                    <li><time>14</time></li>
+                    <li><time>15</time></li>
+                    <li><time>16</time></li>
+                    <li><time>17</time></li>
+                    <li><time>18</time></li>
+                    <li><time>19</time></li>
+                    <li><time>20</time></li>
+                    <li><time>21</time></li>
+                    <li><time>22</time></li>
+                    <li><time>23</time></li>
+                    <li><time>24</time></li>
+                    <li><time>25</time></li>
+                    <li><time>26</time></li>
+                    <li><time>27</time></li>
+                    <li><time>28</time></li>
+                    <li><time>29</time></li>
+                    <li><time>30</time></li>
+                    <li><time>31</time></li>
+                  </ol>
+                </section>
+                <div class="banner-container mx-auto">
+                  <img src="images/jan/jan-banner.png" class="banner-image">
+                </div>
+              </div>  
+              <div class="bottom-container mx-auto">
+                <div class="date-container mx-auto">
+                  <div>
+                    <p class="click-on-more">Click on an observance for more information</p>
+                  
+                    <p class="observance-heading">Month-long Observances</p>
+                    
+                    <li id="jan-mentor" class="observances">
+                      National Mentoring Month
+                    </li>
+                    <li id="jan-poverty" class="observances">
+                      Poverty in America Awareness Month
+                    </li>
+                    <li id="jan-slavery" class="observances">
+                      Slavery and Human Trafficking Awareness Month
+                    </li>
+                    
+                  </div>   
+                  <div>
+                    <p class="observance-heading">Important January Dates</p>
+                    <li id="jan-newyear" class="observances">
+                      January 1 - New Year's Day
+                    </li>
+                    <li id="jan-braille" class="observances">
+                      January 4 - World Braille Day
+                    </li>
+                    <li id="jan-orthodox" class="observances">
+                      January 7 - Orthodox Christmas
+                    </li>
+                    <li id="jan-maghi" class="observances">
+                      January 13 - Maghi
+                    </li>
+                    <!--Needs JAVASCRIPT-->
+                    <li id="jan-martin" class="observances">
+                      January 20 - Martin Luther King, Jr. Day
+                    </li>          
+                    <li id="jan-religion" class="observances">
+                      January 19 - World Religion Day
+                    </li>
+                     <!--Needs JAVASCRIPT-->
+                    <li id="jan-chinesenewyear" class="observances">
+                      January 29 - Chinese New Year
+                    </li>
+                    <li id="jan-education" class="observances">
+                      January 24 - International Day of Education
+                    </li>
+                       <!--Needs JAVASCRIPT-->
+                    <li id="jan-mahayana" class="observances">
+                      January 14- Mahayana New Year <!--(Buddhist)-->
+                    </li>
+
+                    <li id="jan-holocaust" class="observances">
+                      January 27 - International Holocaust Remembrance Day
+                    </li>
+                      
+                  </div>
+
+                </div>
+                <div class="description-container mx-auto">
+                  <div id="jan-div-mentor" class="info-card" style="display: flex; background: #A89087;">
+                    <p class="info-title">National Mentoring Month</p>
+                    <img src="images/jan/jan-mentor.png" class="info-picture">
+                    <p class="info-description">
+                      National Mentoring Month is a campaign run throughout January by MENTOR. Launched in 2002, 
+                      the campaign aims to unify and expand the mentoring movement, celebrate the power of relationships, 
+                      and raise awareness. 
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-poverty" class="info-card" style="display: none; background: #4C4C4C;">
+                    <p class="info-title">Poverty in America Awareness Month</p>
+                    <img src="images/jan/jan-poverty.png" class="info-picture">
+                    <p class="info-description">
+                      Poverty in America Awareness Month is observed every January in the United States. 
+                      Its purpose is to raise awareness about the pervasive issue of 
+                      <p class="collapse info-description morecollapse" id="collapsePoverty">
+                      poverty, highlight the challenges faced by millions of Americans living in poverty, and inspire action towards 
+                      reducing poverty nationwide.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapsePoverty" aria-expanded="false" aria-controls="collapsePoverty">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-slavery" class="info-card" style="display: none; background: #F25252;">
+                    <p class="info-title" >Slavery and Human Trafficking Awareness Month</p>
+                    <img src="images/jan/jan-slavery.png" class="info-picture">
+                    <p class="info-description" >
+                      On December 31, 2012 Barack Obama declared January the National Slavery and Human Trafficking 
+                      Prevention Month. In his proclamation, President Obama 
+                      <p class="collapse info-description morecollapse" id="collapseSlavery">
+                      explains that "trafficking networks 
+                      operate both domestically and trans-nationally, and disproportionately affect women and girls."
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseSlavery" aria-expanded="false" aria-controls="collapseSlavery">
+                      (read more)
+                      </a>
+                  
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-newyear" class="info-card" style="display: none; background: #F36;">
+                    <p class="info-title">New Years Day</p>
+                    <img src="images/jan/jan-newyear.png" class="info-picture">
+                    <p class="info-description">
+                      In the Gregorian calendar, New Year's Day is the first day of the year; January 1. 
+                      While most solar calendars (like the Gregorian and Julian) begin the year 
+                      <p class="collapse info-description morecollapse" id="collapseNewYear">
+                      regularly at 
+                      or near the northern winter solstice, cultures that observe a lunisolar or lunar calendar 
+                      celebrate their Lunar New Year.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseNewYear" aria-expanded="false" aria-controls="collapseNewYear">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-braille" class="info-card" style="display: none; background: #3D62E6;">
+                    <p class="info-title">World Braille Day</p>
+                    <img src="images/jan/jan-braille.png" class="info-picture">    
+                    <p class="info-description">
+                      World Braille Day is an international day on January 4 and celebrates awareness of the 
+                      importance of braille as a means of communication in the full realization of the human 
+                      rights for blind and visually impaired people. 
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-orthodox" class="info-card" style="display: none; background: #52B68A;">
+                    <p class="info-title">Orthodox Christmas</p>
+                    <img src="images/jan/jan-orthodox.png" class="info-picture">
+                    <p class="info-description">
+                      Orthodox Christmas is observed on what the Julian Calendar labels December 25, 
+                      a date that currently corresponds with January 7 on the more 
+                      <p class="collapse info-description morecollapse" id="collapseOrthodox">
+                      widely used Gregorian Calendar 
+                      (which is also when Christmas is observed by the Coptic Orthodox Church in countries such as Egypt).
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseOrthodox" aria-expanded="false" aria-controls="collapseOrthodox">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-maghi" class="info-card" style="display: none; background: #00CAEC;">
+                    <p class="info-title">Maghi</p>
+                    <img src="images/jan/jan-maghi.png" class="info-picture">
+                    <p class="info-description">
+                      Maghi is the regional name of the Hindu festival of Makar Sankranti celebrated in Punjab, 
+                      Haryana Jammu division and Himachal Pradesh. Maghi is celebrated on first day of the month of 
+                      Magh of Hindu Calendar.
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-martin" class="info-card " style="display: none; background: #FFC94A;">
+                    <p class="info-title" style="color: black">Martin Luther King, Jr. Day</p>
+                    <img src="images/jan/jan-martin.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                      Martin Luther King Jr. Day is a federal holiday in the United States marking the birthday of 
+                      Martin Luther King Jr. It marks the birthday of Martin Luther King Jr., the 
+                      <p class="collapse info-description morecollapse" style="color: black" id="collapseMartin">
+                      chief spokesperson 
+                      for nonviolent activism in the Civil Rights Movement, which protested racial discrimination in 
+                      federal and state law.
+                      </p>
+                      <a class="readmore" style="color: black" data-bs-toggle="collapse" href="#collapseMartin" aria-expanded="false" aria-controls="collapseMartin">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-religion" class="info-card " style="display: none; background: #0C569F;">
+                    <p class="info-title" >World Religion Day</p>
+                    <img src="images/jan/jan-religion.png" class="info-picture">
+                    <p class="info-description">
+                      World Religion Day is an observance that was initiated in 1950 by the National Spiritual Assembly 
+                      of the Bahá'ís of the United States, which is celebrated worldwide on the third Sunday in January each year.
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-education" class="info-card " style="display: none; background: #E8EBEE;">
+                    <p class="info-title" style="color: black">International Day of Education</p>
+                    <img src="images/jan/jan-education.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                      International Day of Education is an annual international observance day held on January 24 and is 
+                      dedicated to education. On December 3, 2018, the United 
+                      <p class="collapse info-description morecollapse" style="color: black" id="collapseEducation">
+                      Nations General Assembly adopted a 
+                      resolution proclaiming January 24 as International Day of Education, in celebration of the 
+                      role of education for bringing global peace and sustainable development.
+                      </p>
+                      <a class="readmore" style="color: black" data-bs-toggle="collapse" href="#collapseEducation" aria-expanded="false" aria-controls="collapseEducation">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-mahayana" class="info-card " style="display: none; background: #F66D2E;">
+                    <p class="info-title">Mahayana New Year <!--(Buddhist)--></p>
+                    <img src="images/jan/jan-mahayana.png" class="info-picture">
+                    <p class="info-description">
+                      For Buddhists, the new year is a time for meditation and self reflection. 
+                      The goal is to find ways to improve and learn from past mistakes. 
+                      Buddhists also believe 
+                      <p class="collapse info-description morecollapse" id="collapseMahayana">
+                      that buying new items, cleaning and redecorating the home and 
+                      giving gifts can bring good luck.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseMahayana" aria-expanded="false" aria-controls="collapseMahayana">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="jan-div-holocaust" class="info-card " style="display: none; background: #EF3831;">
+                    <p class="info-title" >International Holocaust Remembrance Day</p>
+                    <img src="images/jan/jan-holocaust.png" class="info-picture">
+                    <p class="info-description">
+                      International Holocaust Remembrance Day, is an international memorial day on January 27 that 
+                      commemorates the victims of the Holocaust, which resulted 
+                      <p class="collapse info-description morecollapse" id="collapseHolocaust">
+                      in the genocide of one third of the 
+                      Jewish people, along with countless members of other minorities by Nazi Germany between 1933 and 1945, 
+                      an attempt to implement its "final solution" to the Jewish question.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseHolocaust" aria-expanded="false" aria-controls="collapseHolocaust">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+        
+            <div class="tab-pane fade" id="february" role="tabpanel" aria-labelledby="february-tab">
+                
+            </div>
+        
+            <div class="tab-pane fade" id="march" role="tabpanel" aria-labelledby="march-tab">
+               
+            </div>
+        
+            <div class="tab-pane fade" id="april" role="tabpanel" aria-labelledby="april-tab">
+              
+            </div>
+        
+            <div class="tab-pane fade" id="may" role="tabpanel" aria-labelledby="may-tab">
+                 
+            </div>
+        
+            <div class="tab-pane fade" id="june" role="tabpanel" aria-labelledby="june-tab">
+                 
+            </div>
+        
+            <div class="tab-pane fade" id="july" role="tabpanel" aria-labelledby="july-tab">
+                 
+            </div>
+        
+            <div class="tab-pane fade" id="august" role="tabpanel" aria-labelledby="august-tab">
+                
+            </div>
+        
+            <div class="tab-pane fade" id="september" role="tabpanel" aria-labelledby="september-tab">
+               
+            </div>
+        
+            <div class="tab-pane fade" id="october" role="tabpanel" aria-labelledby="october-tab">
+               
+            </div>
+        
+            <div class="tab-pane fade" id="november" role="tabpanel" aria-labelledby="november-tab">
+                  
+            </div>
+        
+            <div class="tab-pane fade" id="december" role="tabpanel" aria-labelledby="december-tab">
+              <div class="top-container">
+                <section data-firstday="7" class="mx-auto">
+                  <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
+                  <ol class="days">
+                    <li data-day="0"><time>1</time></li>
+                    <li><time>2</time></li>
+                    <li><time>3</time></li>
+                    <li><time>4</time></li>
+                    <li><time>5</time></li>
+                    <li><time>6</time></li>
+                    <li><time>7</time></li>
+                    <li><time>8</time></li>
+                    <li><time>9</time></li>
+                    <li><time>10</time></li>
+                    <li><time>11</time></li>
+                    <li><time>12</time></li>
+                    <li><time>13</time></li>
+                    <li><time>14</time></li>
+                    <li><time>15</time></li>
+                    <li><time>16</time></li>
+                    <li><time>17</time></li>
+                    <li><time>18</time></li>
+                    <li><time>19</time></li>
+                    <li><time>20</time></li>
+                    <li><time>21</time></li>
+                    <li><time>22</time></li>
+                    <li><time>23</time></li>
+                    <li><time>24</time></li>
+                    <li><time>25</time></li>
+                    <li><time>26</time></li>
+                    <li><time>27</time></li>
+                    <li><time>28</time></li>
+                    <li><time>29</time></li>
+                    <li><time>30</time></li>
+                    <li><time>31</time></li>
+                  </ol>
+                </section>
+                <div class="banner-container mx-auto">
+                  <img src="images/dec/dec-banner.png" class="banner-image">
+                </div>
+              </div>  
+              <div class="bottom-container mx-auto">
+                <div class="date-container mx-auto">
+                  <div>
+                    <p class="click-on-more">Click on an observance for more information.</p>
+                    <p class="observance-heading">Month-long Observances</p>
+                    <li id="dec-aidsmonth" class="observances">
+                      HIV/AIDS Awareness Month
+                    </li>
+                    <li id="dec-humanmonth" class="observances">
+                      Universal Human Rights Month
+                    </li>
+                  </div>       
+                  <div>    
+                    <p class="observance-heading">Important December Dates</p>
+                    <li id="dec-aidsday" class="observances">
+                      December 1 - World AIDS Day
+                    </li>
+                    
+                    <li id="dec-disabilities" class="observances">
+                      December 3 - International Day for People with Disabilities
+                    </li>
+                    
+                    <li id="dec-volunteer" class="observances">
+                      December 5 - International Volunteer Day
+                    </li>
+                    
+                    <li id="dec-genocide" class="observances">
+                      December 9 - Genocide Prevention Day
+                    </li>
+                    
+                    <li id="dec-humanday" class="observances">
+                      December 10 - International Human Rights Day
+                    </li>
+                  
+                    
+                    
+                    <li id="dec-solstice" class="observances">
+                      December 21 - Yule Winter Solstice
+                    </li>
+                  
+                    <li id="dec-hanukkah" class="observances">
+                      <script> const currentYear = new Date().getFullYear();
+                        if (currentYear === 2024) {
+                          document.write("December 25 - Hanukkah begins");
+                        } else if (currentYear === 2025) {
+                          document.write("December 14 - Hanukkah begins");
+                        }
+                      </script>
+                    </li>
+                    
+                    <li id="dec-christmas" class="observances">
+                      December 25 - Christmas
+                    </li>
+                  
+                    <li id="dec-boxing" class="observances">
+                      December 26 - Boxing Day
+                  
+                    <li id="dec-kwanzaa" class="observances">
+                      December 26 - Kwanzaa week
+                    </li>
+                    
+                    <li id="dec-newyearseve" class="observances">
+                      December 31 - New Year's Eve
+                    </li>
+                  </div>
+                </div>
+                <div class="description-container mx-auto">
+                  <div id="dec-div-aidsmonth" class="info-card" style="display: flex; background: #E8EBEE;">
+                    <p class="info-title" style="color: black">HIV/AIDS Awareness Month</p>
+                    <img src="images/dec/dec-aidsmonth.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                      World AIDS Month is observed annually in December to raise awareness about HIV/AIDS and to 
+                      support those affected by the virus. The key date within this 
+                      <p class="collapse info-description morecollapse" style="color: black" id="collapseAidsMonth">
+                      month is December 1, which is 
+                      recognized as World AIDS Day. Established in 1988 by the World Health Organization (WHO), 
+                      World AIDS Day is a global event dedicated to spreading awareness about HIV/AIDS, 
+                      commemorating those who have died from the disease, and promoting efforts to fight the epidemic.
+                      </p>
+                      <a class="readmore" style="color: black" data-bs-toggle="collapse" href="#collapseAidsMonth" aria-expanded="false" aria-controls="collapseAidsMonth">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-humanmonth" class="info-card" style="display: none; background: #F36;">
+                    <p class="info-title">Universal Human Rights Month</p>
+                    <img src="/imagesdec/dec-humanmonth.png" class="info-picture" %>
+                    <p class="info-description">
+                      On December 10, 1948, the United Nations General Assembly established a set of principles regarding equality, 
+                      fairness, and fundamental human rights that must 
+                      <p class="collapse info-description morecollapse" id="collapseHumanMonth">
+                      be universally protected. These principles recognize our 
+                      freedom to make choices about our lives and develop our human potential. The principles are about living free 
+                      from fear, harassment, and discrimination. 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseHumanMonth" aria-expanded="false" aria-controls="collapseHumanMonth">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-aidsday" class="info-card" style="display: none; background: #A453C4;">
+                    <p class="info-title">World AIDS Day</p>
+                    <img src="images/dec/dec-aidsday.png" class="info-picture">
+                    <p class="info-description">
+                      December 1 is recognized as World AIDS Day. Established in 1988 by the World Health Organization (WHO), 
+                      World AIDS Day is a global event dedicated to 
+                      <p class="collapse info-description morecollapse" id="collapseAidsDay">
+                      spreading awareness about HIV/AIDS, 
+                      commemorating those who have died from the disease, and promoting efforts to fight the epidemic.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseAidsDay" aria-expanded="false" aria-controls="collapseAidsDay">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-disabilities" class="info-card" style="display: none; background: #52B68A;">
+                    <p class="info-title">International Day for People with Disabilities</p>
+                    <img src="images/dec/dec-disabilities.png", class="info-picture">
+                    <p class="info-description">
+                      Since its inception in 1945, the United Nations (UN) has outlined and reiterated its commitment to calling 
+                      for the creation of inclusive, accessible and sustainable 
+                      <p class="collapse info-description morecollapse" id="collapseDisabilities">
+                      societies and communities – most notably with the 
+                      adoption of the Universal Declaration of Human Rights in 1948. 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseDisabilities" aria-expanded="false" aria-controls="collapseDisabilities">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-volunteer" class="info-card" style="display: none; background: #F36;">
+                    <p class="info-title">International Volunteer Day</p>
+                    <img src="images/dec/dec-volunteer.png" class="info-picture"%>
+                    <p class="info-description">
+                      Volunteerism is an enormous renewable resource for social, economic and environmental problem-solving 
+                      throughout the world. As the world faces 
+                      <p class="collapse info-description morecollapse" id="collapseVolunteer">
+                      mounting challenges, volunteers are often the first to help. 
+                      Volunteers are at the fore in crises and emergencies, often in very testing and dire situations. 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseVolunteer" aria-expanded="false" aria-controls="collapseVolunteer">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-genocide" class="info-card" style="display: none; background: #272626;">
+                    <p class="info-title">International Genocide Prevention Day</p>
+                    <img src="images/dec/dec-genocide.png" class="info-picture">
+                    <p class="info-description">
+                      Every 9 December, the Office of the Special Adviser on the Prevention of Genocide marks the adoption 
+                      of the Convention on the Prevention and Punishment of the 
+                      <p class="collapse info-description morecollapse" id="collapseGenocide">
+                      Crime of Genocide – a crucial global commitment that was made at the founding of the United Nations, 
+                      immediately preceding the Universal Declaration of Human Rights. 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseGenocide" aria-expanded="false" aria-controls="collapseGenocide">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-humanday" class="info-card" style="display: none; background: #3D62E6;">
+                    <p class="info-title">International Human Rights Day</p>
+                    <img src="images/dec/dec-humanday.png" class="info-picture">
+                    <p class="info-description">
+                      Human Rights Day is observed by the international community every year on 10 December. 
+                      It commemorates the day in 1948 when the General Assembly 
+                      <p class="collapse info-description morecollapse" id="collapseHumanDay">
+                      adopted a "common standard of achievement 
+                      for all peoples and all nations", towards which individuals and societies should "strive by progressive measures,
+                      national and international, to secure their universal and effective recognition and observance". 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseHumanDay" aria-expanded="false" aria-controls="collapseHumanDay">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-solstice" class="info-card" style="display: none; background: #E8EBEE;">
+                    <p class="info-title" style="color: black">Yule Winter Solstice</p>
+                    <img src="images/dec/dec-solstice.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                      Yule is a traditional festival celebrated around the time of the winter solstice, 
+                      typically from December 21 to January 1. Its origins trace back to ancient pagan 
+                      <p class="collapse info-description morecollapse" style="color: black" id="collapseSolstice">
+                      and Norse traditions, 
+                      and it has been incorporated into various modern celebrations, including some aspects of Christmas.
+                      </p>
+                      <a class="readmore" style="color: black" data-bs-toggle="collapse" href="#collapseSolstice" aria-expanded="false" aria-controls="collapseSolstice">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-christmas" class="info-card" style="display: none; background: #EF3831;">
+                    <p class="info-title">Christmas</p>
+                    <img src="images/dec/dec-christmas.png" class="info-picture">
+                    <p class="info-description">
+                      Christmas is an annual festival commemorating the birth of Jesus Christ, 
+                      observed primarily on December 25 as a religious and cultural celebration 
+                      <p class="collapse info-description morecollapse" id="collapseChristmas">
+                       among billions 
+                      of people around the world. A feast central to the liturgical year in Christianity, 
+                      it follows the season of Advent (which begins four Sundays before) or the Nativity Fast, 
+                      and initiates the season of Christmastide, which historically in the West lasts twelve days 
+                      and culminates on Twelfth Night. 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseChristmas" aria-expanded="false" aria-controls="collapseChristmas">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-hanukkah" class="info-card" style="display: none; background: #7493E1;">
+                    <p class="info-title">Hanukkah</p>
+                    <img src="images/dec/dec-hanukkah.png" class="info-picture">
+                    <p class="info-description">
+                      Hanukkah is a Jewish festival commemorating the recovery of Jerusalem and subsequent rededication of the 
+                      Second Temple at the beginning of the 
+                      <p class="collapse info-description morecollapse" id="collapseHanukkah">
+                      Maccabean Revolt against the Seleucid Empire in the 2nd century BCE. 
+                      Hanukkah is observed for eight nights and days, starting on the 25th day of Kislev according to the Hebrew calendar,
+                       which may occur at any time from late November to late December in the Gregorian calendar. The festival is 
+                       observed by lighting the candles of a candelabrum with nine branches, commonly called a menorah or hanukkiah. 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseHanukkah" aria-expanded="false" aria-controls="collapseHanukkah">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-boxing" class="info-card" style="display: none; background: #FFC94A;">
+                    <p class="info-title" style="color: black">Boxing Day</p>
+                    <img src="images/dec/dec-boxing.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                      Boxing Day is celebrated on December 26, the day after Christmas Day, primarily in the United Kingdom 
+                      and other countries historically connected to the British Empire, such as Canada, Australia, and New Zealand.
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-kwanzaa" class="info-card" style="display: none; background: #A89087;">
+                    <p class="info-title">Kwanzaa</p>
+                    <img src="images/dec/dec-kwanzaa.png" class="info-picture">
+                    <p class="info-description">
+                     Kwanzaa is an annual celebration of African-American culture from December 26 to January 1, 
+                     culminating in a communal feast called Karamu, usually on the 
+                     <p class="collapse info-description morecollapse" id="collapseKwanzaa">
+                      sixth day. It was created by activist 
+                     Maulana Karenga, based on African harvest festival traditions from various parts of West and Southeast 
+                     Africa. 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseKwanzaa" aria-expanded="false" aria-controls="collapseKwanzaa">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="dec-div-newyearseve" class="info-card" style="display: none; background: #0C569F;">
+                    <p class="info-title">New Year's Eve</p>
+                    <img src="images/dec/dec-nye.png", class="info-picture">
+                    <p class="info-description">
+                      In the Gregorian calendar, New Year's Eve, also known as Old Year's Day, is the evening or the 
+                      entire day of the last day of the year, 31 December. In many 
+                      <p class="collapse info-description morecollapse" id="collapseNewYearsEve">
+                      countries, New Year's Eve is celebrated 
+                      with dancing, eating, drinking, and watching or lighting fireworks. The celebrations generally 
+                      go on past midnight into New Year's Day, 1 January. 
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseNewYearsEve" aria-expanded="false" aria-controls="collapseNewYearsEve">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  
+      <script src="script.js"></script>
+  </body>
+
+  
+</html>
