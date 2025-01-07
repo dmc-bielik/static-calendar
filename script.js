@@ -376,7 +376,99 @@ marEidalfitr.addEventListener("click", function() {
   changeDisplay(marDivEidalfitr, marDivList)
 })
 
+//APRIL
+const aprDivArab = document.getElementById("apr-div-arab");
+const aprDivAutismMonth = document.getElementById("apr-div-autismmonth");
+const aprDivDiversity = document.getElementById("apr-div-diversity");
+const aprDivAbuse = document.getElementById("apr-div-abuse");
+const aprDivEarthMonth = document.getElementById("apr-div-earthmonth");
+const aprDivVolunteer = document.getElementById("apr-div-volunteer");
+const aprDivAutismDay = document.getElementById("apr-div-autismday");
+const aprDivLaylat = document.getElementById("apr-div-laylat");
+const aprDivAlFitr = document.getElementById("apr-div-alfitr");
+const aprDivPalm = document.getElementById("apr-div-palm");
+const aprDivFriday = document.getElementById("apr-div-friday");
+const aprDivEaster = document.getElementById("apr-div-easter");
+const aprDivSilence = document.getElementById("apr-div-silence");
+const aprDivHashoah = document.getElementById("apr-div-hashoah");
+const aprDivRidvan = document.getElementById("apr-div-ridvan");
+const aprDivEarthDay = document.getElementById("apr-div-earthday");
+const aprDivPassover = document.getElementById("apr-div-passover");
 
+const aprDivList = [aprDivArab, aprDivAutismMonth, aprDivDiversity, aprDivAbuse,
+                    aprDivEarthMonth, aprDivVolunteer, aprDivAutismDay, aprDivLaylat, 
+                    aprDivAlFitr, aprDivPalm, aprDivFriday, aprDivEaster, aprDivSilence, 
+                    aprDivHashoah, aprDivRidvan, aprDivEarthDay, aprDivPassover]
+
+const aprArab = document.getElementById("apr-arab")
+const aprAutismMonth = document.getElementById("apr-autismmonth")
+const aprDiversity = document.getElementById("apr-diversity")
+const aprAbuse = document.getElementById("apr-abuse")
+const aprVolunteer = document.getElementById("apr-volunteer")
+const aprAutismDay = document.getElementById("apr-autismday")
+const aprLaylat = document.getElementById("apr-laylat")
+const aprAlFitr = document.getElementById("apr-alfitr")
+const aprPalm = document.getElementById("apr-palm")
+const aprFriday = document.getElementById("apr-friday")
+const aprEaster = document.getElementById("apr-easter")
+const aprSilence = document.getElementById("apr-silence")
+const aprHashoah = document.getElementById("apr-hashoah")
+const aprRidvan = document.getElementById("apr-ridvan")
+const aprEarthDay = document.getElementById("apr-earthday")
+const aprPassover = document.getElementById("apr-passover")
+const aprEarthMonth = document.getElementById("apr-earthmonth")
+
+aprArab.addEventListener("click", function() {
+  changeDisplay(aprDivArab, aprDivList)
+})
+aprAutismMonth.addEventListener("click", function() {
+  changeDisplay(aprDivAutismMonth, aprDivList)
+})
+aprDiversity.addEventListener("click", function() {
+  changeDisplay(aprDivDiversity, aprDivList)
+})
+aprAbuse.addEventListener("click", function() {
+  changeDisplay(aprDivAbuse, aprDivList)
+})
+aprVolunteer.addEventListener("click", function() {
+  changeDisplay(aprDivVolunteer, aprDivList)
+})
+aprAutismDay.addEventListener("click", function() {
+  changeDisplay(aprDivAutismDay, aprDivList)
+})
+//aprLaylat.addEventListener("click", function() {
+//  changeDisplay(aprDivLaylat, aprDivList)
+//})
+//aprAlFitr.addEventListener("click", function() {
+//  changeDisplay(aprDivAlFitr, aprDivList)
+//})
+aprPalm.addEventListener("click", function() {
+  changeDisplay(aprDivPalm, aprDivList)
+})
+aprFriday.addEventListener("click", function() {
+  changeDisplay(aprDivFriday, aprDivList)
+})
+aprEaster.addEventListener("click", function() {
+  changeDisplay(aprDivEaster, aprDivList)
+})
+aprSilence.addEventListener("click", function() {
+  changeDisplay(aprDivSilence, aprDivList)
+})
+aprHashoah.addEventListener("click", function() {
+  changeDisplay(aprDivHashoah, aprDivList)
+})
+aprRidvan.addEventListener("click", function() {
+  changeDisplay(aprDivRidvan, aprDivList)
+})
+aprEarthDay.addEventListener("click", function() {
+  changeDisplay(aprDivEarthDay, aprDivList)
+})
+aprPassover.addEventListener("click", function() {
+  changeDisplay(aprDivPassover, aprDivList)
+})
+aprEarthMonth.addEventListener("click", function() {
+  changeDisplay(aprDivEarthMonth, aprDivList)
+})
 
 
 

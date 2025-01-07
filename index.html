@@ -1324,82 +1324,282 @@
                       April 2 - World Autism Awareness Day
                     </li>
                     <li id="apr-palm" class="observances">
-                      <script> const currentYear = new Date().getFullYear();
-                        if (currentYear === 2025) {
-                          document.write("April 13 - Palm Sunday");
-                        }
-                      </script>
+                      April 13 - Palm Sunday
                     </li>  
-                    
                     <li id="apr-friday" class="observances">
-                      <script> const currentYear = new Date().getFullYear();
-                        if (currentYear === 2025) {
-                          document.write("April 19 - Good Friday");
-                        }
-                      </script>
+                      April 19 - Good Friday
                     </li>  
                     <li id="apr-easter" class="observances">
-                      <script> const currentYear = new Date().getFullYear();
-                        if (currentYear === 2025) {
-                          document.write("April 20 - Easter");
-                        }
-                      </script>
+                      April 20 - Easter
                     </li>  
-                    
                     <li id= "apr-silence" class="observances">
-                      April
-                      <% if Time.current.year == 2023 %>
-                      14
-                      <% elsif Time.current.year == 2024 %>
-                      12
-                      <% elsif Time.current.year == 2025 %>
-                      11
-                      <% else %>
-                      (second Friday)
-                      <% end %>
-                       - National Day of Silence <!--(LGBTQ+)-->
+                      April 11 - National Day of Silence
                     </li>
-                    <div id="apr-hashoah">
-                      <% if Time.current.year == 2023 || Time.current.year == 2025%>
-                        <li class="observances">
-                          April
-                          <% if Time.current.year == 2023 %>
-                          18
-                          <% elsif Time.current.year == 2025 %>
-                          23
-                          <% end %>
-                          - Yom Hashoah <!--(Jewish)-->
-                        </li>
-                      <% end %>  
-                    </div>
+                    <li id="apr-hashoah" class="observances">
+                      April 23 - Yom Hashoah
+                    </li>
                     <li id="apr-ridvan" class="observances">
-                      April 21 - Start of Ridvan <!--(Baha’i)-->
+                      April 21 - Start of Ridvan
                     </li>
-                    
-                    
                     <li id="apr-earthday" class="observances">
                       April 22 - Earth Day
                     </li>
-                    
                     <li id= "apr-passover" class="observances">
-                      April
-                      <% if Time.current.year == 2023 %>
-                      5-13
-                      <% elsif Time.current.year == 2024 %>
-                      22-30
-                      <% elsif Time.current.year == 2025 %>
-                      1-9
-                      <% else %>
-                      (date varies)
-                      <% end %>
-                      - Passover <!--(Jewish)-->
+                      April 1-9 - Passover
                     </li>
-                    
                   </div>
                   
                 </div>
                 <div class="description-container mx-auto">
-                  <%= render 'pages/april/apr_descriptions'%>
+                  <div id="apr-div-arab" class="info-card" style="display: flex; background: #314A9F;">
+                    <p class="info-title">National Arab-American Heritage Month</p>
+                    <img src="images/apr/apr-arab.png" class="info-picture">
+                    <p class="info-description">
+                      The United States Department of State has recognized April as the National Arab American Heritage Month. 
+                      Stating in a public announcement on April 1, 2021, 
+                      <p class="collapse info-description morecollapse" id="collapseArab">
+                        through their official social media channels: 
+                        "Americans of Arab heritage are very much a part of the fabric of this nation, and Arab Americans 
+                        have contributed in every field and profession."
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseArab" aria-expanded="false" aria-controls="collapseArab">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-autismmonth" class="info-card" style="display: none; background: #F25252;">
+                    <p class="info-title">National Autism Acceptance Month</p>
+                    <img src="images/apr/apr-autismmonth.png" class="info-picture">
+                    <p class="info-description">
+                      April is National Autism Acceptance Month. The recognition raises awareness about autism acceptance and promotes 
+                      inclusion and connectedness for people 
+                      <p class="collapse info-description morecollapse" id="collapseAutismMonth">
+                        with autism. Social and community support can help people with 
+                        autism achieve optimal health and reach their full potential.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseAutismMonth" aria-expanded="false" aria-controls="collapseAutismMonth">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-diversity" class="info-card" style="display: none; background:  #A89087;">
+                    <p class="info-title">Celebrate Diversity Month</p>
+                    <img src ="images/apr/apr-diversity.png" class="info-picture">
+                    <p class="info-description">
+                      Diversity brings substantial organizational benefits such as better decision making and improved problem solving, 
+                      greater creativity and innovation, which 
+                      <p class="collapse info-description morecollapse" id="collapseDiversity">
+                        lead to maximizing the positive impact of an organization.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseDiversity" aria-expanded="false" aria-controls="collapseDiversity">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-earthmonth" class="info-card" style="display: none; background: #52B68A;">
+                    <p class="info-title">Earth Month</p>
+                    <img src="images/apr/apr-earthmonth.png" class="info-picture">
+                    <p class="info-description">
+                      Earth Day is an annual event on April 22 to demonstrate support for environmental protection. 
+                      First held on April 22, 1970, it now includes a wide range 
+                      <p class="collapse info-description morecollapse" id="collapseEarthMonth">
+                        of events coordinated globally by EARTHDAY.ORG 
+                        including 1 billion people in more than 193 countries.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseEarthMonth" aria-expanded="false" aria-controls="collapseEarthMonth">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-abuse" class="info-card" style="display: none; background: #00CAEC;">
+                    <p class="info-title">National Child Abuse Prevention Month</p>
+                    <img src="images/apr/apr-abuse.png" class="info-picture">
+                    <p class="info-description">
+                      National Child Abuse Prevention Month recognizes the importance of families and communities working 
+                      together to prevent child abuse and neglect. 
+                      <p class="collapse info-description morecollapse" id="collapseAbuse">
+                        Prevention services and supports developed by this 
+                        collaboration can help to protect children and strengthen families.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseAbuse" aria-expanded="false" aria-controls="collapseAbuse">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-volunteer" class="info-card" style="display: none; background: #FFC94A;">
+                    <p class="info-title" style="color: black">National Volunteer Month</p>
+                    <img src="images/apr/apr-volunteer.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                      National Volunteer month in the United States takes place in the month of April. 
+                      This month is dedicated to honoring all of the volunteers in our communities 
+                      as 
+                      <p class="collapse info-description morecollapse" style="color: black" id="collapseVolunteer">
+                        well as encouraging volunteerism throughout the month.
+                      </p>
+                      <a class="readmore" style="color: black" data-bs-toggle="collapse" href="#collapseVolunteer" aria-expanded="false" aria-controls="collapseVolunteer">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-autismday" class="info-card" style="display: none; background: #E8EBEE;">
+                    <p class="info-title" style="color: black">World Autism Awareness Day</p>
+                    <img src="images/apr/apr-autismday.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                      World Autism Awareness Day is an internationally recognized day annually on April 2, 
+                      encouraging Member States of the United Nations to take measures to 
+                      <p class="collapse info-description morecollapse" style="color: black" id="collapseAutismDay">
+                        raise awareness about autistic individuals throughout the world.
+                      </p>
+                      <a class="readmore" style="color: black" data-bs-toggle="collapse" href="#collapseAutismDay" aria-expanded="false" aria-controls="collapseAutismDay">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-laylat" class="info-card" style="display: none; background: #FFC94A;">
+                    <p class="info-title" style="color: black">Laylat al-Qadr <!--(Muslim)--></p>
+                    <img src="images/apr/apr-laylat.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                     The Night of Power (Arabic: لیلة القدر, Night of Decree, or Night of Determination, 
+                     also the Precious Night), is, in Islamic belief, the night when Muslims believe the 
+                     Quran 
+                     <p class="collapse info-description morecollapse" style="color: black" id="collapseLaylat">
+                        was first sent down from Heaven to the world and also the night when the 
+                        first verses of the Quran were revealed to the Islamic prophet Muhammad; 
+                        it is described to be better than a thousand months of worshipping.
+                      </p>
+                      <a class="readmore" style="color: black" data-bs-toggle="collapse" href="#collapseLaylat" aria-expanded="false" aria-controls="collapseLaylat">
+                      (read more)
+                      </a>
+                     
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-alfitr" class="info-card " style="display: none; background: #52B68A;">
+                    <p class="info-title">Eid al-Fitr <!--(Islam)--></p>
+                    <img src="images/apr/apr-alfitr.png" class="info-picture">
+                    <p class="info-description">
+                      The religious holiday of Eid al-Fitr is celebrated by Muslims worldwide 
+                      because it marks the end of the month-long dawn-to-sunset fasting of Ramadan. 
+                      It is considered a very important and meaning observance in the Islamic religion.
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-palm" class="info-card " style="display: none; background: #4C4C4C;">
+                    <p class="info-title">Palm Sunday</p>
+                    <img src="images/mar/mar-palm.png" class="info-picture">
+                    <p class="info-description">
+                      Palm Sunday is the Christian moveable feast that falls on the Sunday before Easter. 
+                      The feast commemorates Christ's triumphal entry into Jerusalem, an event mentioned 
+                      in each of the four canonical Gospels. 
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-friday" class="info-card " style="display: none; background: #52B68A;">
+                    <p class="info-title">Good Friday </p>
+                    <img src="images/mar/mar-friday.png" class="info-picture">
+                    <p class="info-description">
+                      Good Friday is a Christian holiday commemorating the crucifixion of Jesus and his death at Calvary. 
+                      It is observed during Holy Week as part of the Paschal 
+                      <p class="collapse info-description morecollapse" id="collapseFriday">
+                      Triduum. It is also known as Holy Friday, Great Friday, Great and Holy Friday (also Holy and Great Friday), and Black Friday.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseFriday" aria-expanded="false" aria-controls="collapseFriday">
+                      (read more)
+                      </a> 
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-easter" class="info-card " style="display: none; background: #FFC94A;">
+                    <p class="info-title" style="color: black">Easter </p>
+                    <img src="images/mar/mar-easter.png" class="info-picture">
+                    <p class="info-description" style="color: black">
+                      A Christian festival and cultural holiday commemorating the resurrection of Jesus from the dead, 
+                      described in the New Testament as having occurred on the third day of his burial following his 
+                      crucifixion by the Romans at Calvary.
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-silence" class="info-card " style="display: none; background: #F36;">
+                    <p class="info-title">National Day of Silence <!--(LGBTQ+)--></p>
+                    <img src="images/apr/apr-silence.png" class="info-picture">
+                    <p class="info-description">
+                     Day of Silence is GLSEN's annual day of action to spread awareness about the effects of the 
+                     bullying and harassment of lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) students.
+                    </p>
+                  
+                  </div>
+                  
+                  <div id="apr-div-hashoah" class="info-card " style="display: none; background: #3D62E6;">
+                    <p class="info-title">Yom Hashoah</p>
+                    <img src="images/may/may-hashoah.png" class="info-picture">
+                    <p class="info-description">
+                    Yom HaZikaron laShoah ve-laG'vurah (Hebrew: יום הזיכרון לשואה ולגבורה), known colloquially in Israel and 
+                    abroad as Yom HaShoah, and in English as International
+                      <p class="collapse info-description morecollapse" id="collapseHashoah">
+                      Holocaust Remembrance Day, or Holocaust Day, is observed 
+                      as Israel's day of commemoration for the approximately six million Jews murdered in the Holocaust by Nazi Germany 
+                      and its collaborators, and for the Jewish resistance in that period.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseHashoah" aria-expanded="false" aria-controls="collapseHashoah">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-ridvan" class="info-card " style="display: none; background: #00CAEC;">
+                    <p class="info-title">Start of Ridvan <!--(Baha’i)--></p>
+                    <img src="images/apr/apr-ridvan.png" class="info-picture">
+                    <p class="info-description">
+                      A twelve-day festival in the Bahá'í Faith, commemorating Bahá'u'lláh's declaration 
+                      that he was a Manifestation of God. It is the holiest Bahá'í festival, and is also 
+                      referred to as the "Most Great Festival" and the "King of Festivals".
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-earthday" class="info-card " style="display: none; background: #3D62E6;">
+                    <p class="info-title">Earth Day</p>
+                    <img src="images/apr/apr-earthday.png" class="info-picture">
+                    <p class="info-description">
+                      Earth Day is an annual event on April 22 to demonstrate support for environmental protection. 
+                      First held on April 22, 1970, it now includes a wide range 
+                      <p class="collapse info-description morecollapse" id="collapseEarthDay">
+                        of events coordinated globally by EARTHDAY.ORG 
+                        including 1 billion people in more than 193 countries.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseEarthDay" aria-expanded="false" aria-controls="collapseEarthDay">
+                      (read more)
+                      </a>
+                      
+                    </p>
+                  </div>
+                  
+                  <div id="apr-div-passover" class="info-card " style="display: none; background: #A453C4;">
+                    <p class="info-title">Passover <!--(Jewish)--></p>
+                    <img src="images/apr/apr-passover.png" class="info-picture">
+                    <p class="info-description">
+                      Passover, also called Pesach, is a major Jewish holiday, one of the three pilgrimage festivals, 
+                      that celebrates the Biblical story of the Israelites' escape 
+                      <p class="collapse info-description morecollapse" id="collapseEaster">
+                        from slavery in Egypt. Pesach starts on the 15th day of the Hebrew month of Nisan 
+                        which is considered the first month of the Hebrew year.
+                      </p>
+                      <a class="readmore" data-bs-toggle="collapse" href="#collapseEaster" aria-expanded="false" aria-controls="collapseEaster">
+                      (read more)
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1836,6 +2036,887 @@
                 <div>
                   <p class="click-on-more">Click on an observance for more information</p>
                   <p class="observance-heading">Month-long Observances</p>
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseMentor" role="button" aria-expanded="false" aria-controls="collapseMentor">
+                    National Mentoring Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseMentor">
+                    <div class="info-card" style="margin-left: 20px; background: #A89087;">
+                      <p class="info-title">National Mentoring Month</p>
+                      <img src="images/jan/jan-mentor.png" class="info-picture">
+                      <p class="info-description">
+                        National Mentoring Month is a campaign run throughout January by MENTOR. Launched in 2002, 
+                        the campaign aims to unify and expand the mentoring movement, celebrate the power of relationships, 
+                        and raise awareness.
+                      </p>
+                    </div>
+                  </div>
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapsePoverty" role="button" aria-expanded="false" aria-controls="collapsePoverty">
+                    Poverty in America Awareness Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapsePoverty">
+                    <div class="info-card" style="margin-left: 20px; background: #4C4C4C;">
+                      <p class="info-title">Poverty in America Awareness Month</p>
+                      <img src="images/jan/jan-poverty.png" class="info-picture">
+                      <p class="info-description">
+                        Poverty in America Awareness Month is observed every January in the United States. 
+                        Its purpose is to raise awareness about the pervasive issue of 
+                        poverty, highlight the challenges faced by millions of Americans living in poverty, and inspire action towards 
+                        reducing poverty nationwide.
+                      </p>
+                    </div>
+                  </div>
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseSlavery" role="button" aria-expanded="false" aria-controls="collapseSlavery">
+                    Slavery and Human Trafficking Awareness Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseSlavery">
+                    <div class="info-card" style="margin-left: 20px; background: #F25252;">
+                      <p class="info-title">Slavery and Human Trafficking Awareness Month</p>
+                        <img src="images/jan/jan-slavery.png" class="info-picture">
+                      <p class="info-description">
+                        On December 31, 2012 Barack Obama declared January the National Slavery and Human Trafficking 
+                        Prevention Month. In his proclamation, President Obama 
+                        explains that "trafficking networks 
+                        operate both domestically and trans-nationally, and disproportionately affect women and girls."
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>   
+                <div>
+                  <p class="observance-heading">Important January Dates</p>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseNewYear" role="button" aria-expanded="false" aria-controls="collapseNewYear">
+                    January 1 - New Year's Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseNewYear">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title">New Year's Day</p>
+                        <img src="images/jan/jan-newyear.png" class="info-picture">
+                      <p class="info-description">
+                        In the Gregorian calendar, New Year's Day is the first day of the year; January 1. 
+                        While most solar calendars (like the Gregorian and Julian) begin the year 
+                        regularly at or near the northern winter solstice, cultures that observe a lunisolar or lunar calendar 
+                        celebrate their Lunar New Year.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseBraille" role="button" aria-expanded="false" aria-controls="collapseBraille">
+                    January 4 - World Braille Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseBraille">
+                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
+                      <p class="info-title">World Braille Day</p>
+                        <img src="images/jan/jan-braille.png" class="info-picture">
+                      <p class="info-description">
+                        World Braille Day is an international day on January 4 and celebrates awareness of the 
+                        importance of braille as a means of communication in the full realization of the human 
+                        rights for blind and visually impaired people.
+                      </p>
+                    </div>
+                  </div>
+                
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseChristmas" role="button" aria-expanded="false" aria-controls="collapseChristmas">
+                    January 7 - Orthodox Christmas
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseChristmas">
+                    <div class="info-card" style="margin-left: 20px; background: #52B68A;">
+                      <p class="info-title">Orthodox Christmas</p>
+                        <img src="images/jan/jan-orthodox.png" class="info-picture">
+                      <p class="info-description">
+                        Orthodox Christmas is observed on what the Julian Calendar labels December 25, 
+                        a date that currently corresponds with January 7 on the more widely used Gregorian Calendar 
+                        (which is also when Christmas is observed by the Coptic Orthodox Church in countries such as Egypt).
+                      </p>
+                    </div>
+                  </div>
+                
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseMaghi" role="button" aria-expanded="false" aria-controls="collapseMaghi">
+                    January 13 - Maghi
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseMaghi">
+                    <div class="info-card" style="margin-left: 20px; background: #00CAEC;">
+                      <p class="info-title">Maghi</p>
+                        <img src="images/jan/jan-maghi.png" class="info-picture">
+                      <p class="info-description">
+                        Maghi is the regional name of the Hindu festival of Makar Sankranti celebrated in Punjab, 
+                        Haryana Jammu division and Himachal Pradesh. Maghi is celebrated on first day of the month of 
+                        Magh of Hindu Calendar.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseMahayana" role="button" aria-expanded="false" aria-controls="collapseMahayana">
+                    January 14 - Mahayana New Year
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseMahayana">
+                    <div class="info-card" style="margin-left: 20px; background: #F66D2E;">
+                      <p class="info-title">Mahayana New Year <!--(Buddhist) --></p>
+                        <img src="images/jan/jan-mahayana.png" class="info-picture">
+                      <p class="info-description">
+                        For Buddhists, the new year is a time for meditation and self reflection. 
+                        The goal is to find ways to improve and learn from past mistakes. 
+                        Buddhists also believe that buying new items, cleaning and redecorating the home and 
+                        giving gifts can bring good luck.
+                      </p>
+                    </div>
+                  </div>  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseReligion" role="button" aria-expanded="false" aria-controls="collapseReligion">
+                    January 19 - World Religion Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseReligion">
+                    <div class="info-card" style="margin-left: 20px; background: #0C569F;">
+                      <p class="info-title">World Religion Day</p>
+                        <img src="images/jan/jan-religion.png" class="info-picture">
+                      <p class="info-description">
+                        World Religion Day is an observance that was initiated in 1950 by the National Spiritual Assembly 
+                        of the Bahá'ís of the United States, which is celebrated worldwide on the third Sunday in January each year.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseMartin" role="button" aria-expanded="false" aria-controls="collapseMartin">
+                    January 20 - Martin Luther King, Jr. Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseMartin">
+                    <div class="info-card" style="margin-left: 20px; background: #FFC94A; color: black">
+                      <p class="info-title" style="color: black">Martin Luther King, Jr. Day</p>
+                        <img src="images/jan/jan-martin.png" class="info-picture">
+                      <p class="info-description" style="color: black">
+                        Martin Luther King Jr. Day is a federal holiday in the United States marking the birthday of 
+                        Martin Luther King Jr. It marks the birthday of Martin Luther King Jr., the chief spokesperson 
+                        for nonviolent activism in the Civil Rights Movement, which protested racial discrimination in 
+                        federal and state law.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseEducation" role="button" aria-expanded="false" aria-controls="collapseEducation">
+                    January 24 - International Day of Education
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseEducation">
+                    <div class="info-card" style="margin-left: 20px; background: #E8EBEE;">
+                      <p class="info-title" style="color: black">International Day of Education</p>
+                        <img src="images/jan/jan-education.png" class="info-picture">
+                      <p class="info-description" style="color: black">
+                        International Day of Education is an annual international observance day held on January 24 and is 
+                        dedicated to education. On December 3, 2018, the United Nations General Assembly adopted a 
+                        resolution proclaiming January 24 as International Day of Education, in celebration of the 
+                        role of education for bringing global peace and sustainable development.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseHolocaust" role="button" aria-expanded="false" aria-controls="collapseHolocaust">
+                    January 27 - International Holocaust Remembrance Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseHolocaust">
+                    <div class="info-card" style="margin-left: 20px; background: #EF3831;">
+                      <p class="info-title">International Holocaust Remembrance Day</p>
+                        <img src="images/jan/jan-holocaust.png" class="info-picture">
+                      <p class="info-description">
+                        The International Holocaust Remembrance Day, is an international memorial day on January 27 that 
+                        commemorates the victims of the Holocaust, which resulted in the genocide of one third of the 
+                        Jewish people, along with countless members of other minorities by Nazi Germany between 1933 and 1945, 
+                        an attempt to implement its "final solution" to the Jewish question.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseChinese" role="button" aria-expanded="false" aria-controls="collapseChinese">
+                    January 29 - Chinese New Year
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseChinese">
+                    <div class="info-card" style="margin-left: 20px; background: #232323;">
+                      <p class="info-title">Chinese New Year</p>
+                        <img src="images/feb/feb-chinese.png" class="info-picture">
+                      <p class="info-description">
+                        Chinese New Year is the festival that celebrates the beginning of a 
+                        new year on the traditional lunisolar Chinese calendar. In Chinese, the 
+                        festival is commonly referred to as the Spring Festival, marking the end of winter and the 
+                          beginning of the spring season.
+                      </p>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="february-mobile" role="tabpanel" aria-labelledby="february-mobile-tab">
+            <div class="top-container">
+              <section data-firstday="7" class="mx-auto">
+                <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
+                  <ol class="days">
+                    <li data-day=6><time>1</time></li>
+                    <li><time>2</time></li>
+                    <li><time>3</time></li>
+                    <li><time>4</time></li>
+                    <li><time>5</time></li>
+                    <li><time>6</time></li>
+                    <li><time>7</time></li>
+                    <li><time>8</time></li>
+                    <li><time>9</time></li>
+                    <li><time>10</time></li>
+                    <li><time>11</time></li>
+                    <li><time>12</time></li>
+                    <li><time>13</time></li>
+                    <li><time>14</time></li>
+                    <li><time>15</time></li>
+                    <li><time>16</time></li>
+                    <li><time>17</time></li>
+                    <li><time>18</time></li>
+                    <li><time>19</time></li>
+                    <li><time>20</time></li>
+                    <li><time>21</time></li>
+                    <li><time>22</time></li>
+                    <li><time>23</time></li>
+                    <li><time>24</time></li>
+                    <li><time>25</time></li>
+                    <li><time>26</time></li>
+                    <li><time>27</time></li>
+                    <li><time>28</time></li>
+                  </ol>
+              </section>
+              <div class="banner-container mx-auto">
+                <img src="images/feb/feb-banner.png" class="banner-image">
+              </div>
+            </div>  
+            <div class="bottom-container" style="margin-left: 20px;">
+              <div class="date-container ">
+                <div>
+                  <p class="click-on-more">Click on an observance for more information.</p>
+                  <p class="observance-heading">Month-long Observances</p>
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseHeart" role="button" aria-expanded="false" aria-controls="collapseHeart">
+                    American Heart Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseHeart">
+                    <div class="info-card" style="margin-left: 20px; background: #314A9F;">
+                      <p class="info-title">American Heart Month</p>
+                        <img src="images/feb/feb-heart.png" class="info-picture">
+                      <p class="info-description">
+                        American Heart Month is observed during February, 
+                        urging the people of the United States to recognize the nationwide problem of 
+                        heart and blood vessel diseases and to support all essential programs required to solve the problem.
+                      </p>
+                    </div>
+                  </div>
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseEthnic" role="button" aria-expanded="false" aria-controls="collapseEthnic">
+                    Ethnic Equality Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseEthnic">
+                    <div class="info-card" style="margin-left: 20px; background: #4C4C4C;">
+                      <p class="info-title">Ethnic Equality Month</p>
+                        <img src="images/mar/mar-ethnic.png" class="info-picture">
+                      <p class="info-description">
+                        Ethnic Equality Month is celebrated as an effort to celebrate diversity 
+                    and promote equality among all ethnicities and cultures. Specific cultures and ethnicities 
+                    are celebrated individually on specific dates throughout the month.
+                      </p>
+                    </div>
+                  </div>
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseBlackHistory" role="button" aria-expanded="false" aria-controls="collapseBlackHistory">
+                    Black History Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseBlackHistory">
+                    <div class="info-card" style="margin-left: 20px; background: #F25252;">
+                      <p class="info-title"> Black History Month</p>
+                        <img src="images/feb/feb-blackhistory.png" class="info-picture">
+                      <p class="info-description">
+                        Black educators and Black United Students at Kent State University first 
+                        proposed Black History Month in February 1969. The first celebration 
+                        of Black History Month took place at Kent State a year later, from January 2 to February 28, 1970.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="observance-heading">Important February Dates</p>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseFreedom" role="button" aria-expanded="false" aria-controls="collapseFreedom">
+                    February 1 - National Freedom Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseFreedom">
+                    <div class="info-card" style="margin-left: 20px; background: #E8EBEE;">
+                      <p class="info-title" style="color: black">National Freedom Day</p>
+                        <img src="images/feb/feb-freedom.png" class="info-picture">
+                      <p class="info-description" style="color: black">
+                        National Freedom Day is a United States observance on February 1 
+                        honoring the signing by President Abraham Lincoln of a joint House and Senate resolution 
+                        that later was ratified as the 13th Amendment to the U.S. Constitution. President
+                        Lincoln signed the Amendment abolishing slavery on February 1, 1865, 
+                        although it was not ratified by the states until later.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseRosa" role="button" aria-expanded="false" aria-controls="collapseRosa">
+                    February 4 - Rosa Parks Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseRosa">
+                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
+                      <p class="info-title"> Rosa Parks Day</p>
+                        <img src="images/feb/feb-rosa.png" class="info-picture">
+                      <p class="info-description">
+                        Rosa Parks Day is a holiday in honor of the civil rights leader Rosa Parks, 
+                        celebrated in the U.S. states of California and Missouri on her birthday, 
+                        February 4, in Michigan on the first Monday after her birthday, and in Ohio and Oregon on 
+                        the day she was arrested, December 1.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseInternet" role="button" aria-expanded="false" aria-controls="collapseInternet">
+                    February 6 - Safer Internet Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseInternet">
+                    <div class="info-card" style="margin-left: 20px; background: #52B68A;">
+                      <p class="info-title">Safer Internet Day</p>
+                        <img src="images/feb/feb-internet.png" class="info-picture">
+                      <p class="info-description">
+                        As the number of internet users continues to grow worldwide, internets, governments, 
+                        and organizations have expressed concerns about the safety of children and teenagers 
+                        and the elderly using the Internet. Over 45% 
+                        have announced they have endured some sort of cyber-harassment. Safer Internet Day is 
+                        celebrated worldwide in February to raise awareness about internet safety.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseScience" role="button" aria-expanded="false" aria-controls="collapseScience">
+                    February 11 - International Day of Women & Girls in Science
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseScience">
+                    <div class="info-card" style="margin-left: 20px; background: #00CAEC;">
+                      <p class="info-title"> International Day of Women & Girls in Science</p>
+                        <img src="images/feb/feb-science.png" class="info-picture">
+                      <p class="info-description">
+                        The International Day of Women and Girls in Science is implemented annually by UNESCO in 
+                        collaboration with UN Women. Both organizations work with national governments, 
+                        intergovernmental organizations, civil society partners, universities 
+                        and corporations in order to achieve the shared goal of promoting the role of women and girls in 
+                        scientific fields and celebrate those already successful in the field.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseEpilepsy" role="button" aria-expanded="false" aria-controls="collapseEpilepsy">
+                    February 10 - International Epilepsy Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseEpilepsy">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title"> International Epilepsy Day</p>
+                        <img src="images/feb/feb-epilepsy.png" class="info-picture">
+                      <p class="info-description">
+                        Started in 2015 and organized by the International Bureau for Epilepsy (IBE) and 
+                        the International League Against Epilepsy (ILAE), the day provides a platform for people with epilepsy to 
+                        share their experiences and stories with a global 
+                        audience. The day also calls for all people to advocate for appropriate legislation that will guarantee 
+                        human rights of people with epilepsy and encourages people with epilepsy to live to their fullest potential.
+                      </p>
+                    </div>
+                  </div>    
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseValentines" role="button" aria-expanded="false" aria-controls="collapseValentines">
+                    February 14 - Valentine's Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseValentines">
+                    <div class="info-card" style="margin-left: 20px; background: #EF3831;;">
+                      <p class="info-title">Valentine's Day</p>
+                        <img src="images/feb/feb-valentines.png" class="info-picture">
+                      <p class="info-description">
+                        Valentine's Day, also called Saint Valentine's Day or the Feast of Saint Valentine,
+                        originated as a Christian feast day honoring a martyr named Valentine and through later folk traditions, 
+                        it has also become a significant cultural, religious 
+                        and commercial celebration of romance and love in 
+                        many regions of the world.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseNirvana" role="button" aria-expanded="false" aria-controls="collapseNirvana">
+                    February 15 - Parinirvana Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseNirvana">
+                    <div class="info-card" style="margin-left: 20px; background: #FFC94A;">
+                      <p class="info-title" style="color: black">Parinirvana Day <!--(Buddhist)--></p>
+                        <img src="images/feb/feb-nirvana.png" class="info-picture"%>
+                      <p class="info-description" style="color: black">
+                        Parinirvana Day is a Mahayana Buddhist holiday celebrated in East Asia, Vietnam and the Philippines. 
+                        It celebrates the day when the Buddha is said to have achieved Parinirvana, or complete Nirvana, 
+                        upon the death of his physical body.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseCancer" role="button" aria-expanded="false" aria-controls="collapseCancer">
+                    February 15 - International Childhood Cancer Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseCancer">
+                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
+                      <p class="info-title">International Childhood Cancer Day</p>
+                        <img src="images/feb/feb-cancer.png" class="info-picture">
+                      <p class="info-description">
+                        International Childhood Cancer Day is a global collaborative campaign to raise awareness about childhood cancer, 
+                        and to express support for children and adolescents with cancer, the survivors and their families.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseShivarati" role="button" aria-expanded="false" aria-controls="collapseShivarati">
+                    February 26 - Maha Shivaratri
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseShivarati">
+                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
+                      <p class="info-title"> Maha Shivaratri <!--(Hindu)--></p>
+                        <img src="images/mar/mar-maha.png" class="info-picture">
+                      <p class="info-description">
+                        Maha Shivaratri is a Hindu festival celebrated annually in honour of the deity Shiva. 
+                        According to the Hindu calendar, the festival is observed on the fourteenth day of the dark (waning) 
+                        half of the lunar month of Phalguna or Magha. The festival commemorates the wedding of Shiva and 
+                        Parvati, and the occasion that Shiva performs his divine dance, called the Tandava.
+                      </p>
+                    </div>
+                  </div> 
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseJustice" role="button" aria-expanded="false" aria-controls="collapseJustice">
+                    February 20 - World Day of Social Justice
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseJustice">
+                    <div class="info-card" style="margin-left: 20px; background: #52B68A;">
+                      <p class="info-title"> World Day of Social Justice</p>
+                        <img src="images/feb/feb-justice.png" class="info-picture">
+                      <p class="info-description">
+                        World Day of Social Justice is an international day recognizing the need to promote social justice, 
+                        which includes efforts to tackle issues such as poverty, exclusion, gender inequality, unemployment, 
+                        human rights, and social protections.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseRamadan" role="button" aria-expanded="false" aria-controls="collapseRamadan">
+                    February 28 - Ramadan begins
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseRamadan">
+                    <div class="info-card" style="margin-left: 20px; background: #FFC94A;">
+                      <p class="info-title" style="color: black">Ramadan begins</p>
+                        <img src="images/mar/mar-ramadan.png" class="info-picture">
+                      <p class="info-description" style="color: black">
+                        Ramadan is the ninth month of the Islamic calendar, observed by Muslims worldwide as a 
+                        month of fasting, prayer, reflection, and community. A commemoration of Muhammad's 
+                        first revelation, the annual observance of Ramadan is regarded as one of the Five 
+                        Pillars of Islam and lasts twenty-nine to thirty days, from one sighting of the crescent moon to the next.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="march-mobile" role="tabpanel" aria-labelledby="march-mobile-tab">
+            <div class="top-container">
+              <section data-firstday="7" class="mx-auto">
+                <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
+                <ol class="days">
+                  <li data-day=6><time>1</time></li>
+                  <li><time>2</time></li>
+                  <li><time>3</time></li>
+                  <li><time>4</time></li>
+                  <li><time>5</time></li>
+                  <li><time>6</time></li>
+                  <li><time>7</time></li>
+                  <li><time>8</time></li>
+                  <li><time>9</time></li>
+                  <li><time>10</time></li>
+                  <li><time>11</time></li>
+                  <li><time>12</time></li>
+                  <li><time>13</time></li>
+                  <li><time>14</time></li>
+                  <li><time>15</time></li>
+                  <li><time>16</time></li>
+                  <li><time>17</time></li>
+                  <li><time>18</time></li>
+                  <li><time>19</time></li>
+                  <li><time>20</time></li>
+                  <li><time>21</time></li>
+                  <li><time>22</time></li>
+                  <li><time>23</time></li>
+                  <li><time>24</time></li>
+                  <li><time>25</time></li>
+                  <li><time>26</time></li>
+                  <li><time>27</time></li>
+                  <li><time>28</time></li>
+                  <li><time>29</time></li>
+                  <li><time>30</time></li>
+                  <li><time>31</time></li>
+                </ol>
+              </section>
+              <div class="banner-container mx-auto">
+                <img src="images/mar/mar-banner.png" class="banner-image">
+              </div>
+            </div>  
+            <div class="bottom-container" style="margin-left: 20px;">
+              <div class="date-container ">
+                <div>
+                  <p class="click-on-more">Click on an observance for more information.</p>
+                  <p class="observance-heading">Month-long Observances</p>
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseDevelopmental" role="button" aria-expanded="false" aria-controls="collapseDevelopmental">
+                    Developmental Disabilities Awareness Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseDevelopmental">
+                    <div class="info-card" style="margin-left: 20px; background: #A89087;">
+                      <p class="info-title">Developmental Disabilities Awareness Month</p>
+                        <img src="images/mar/mar-developmental.png" class="info-picture">
+                      <p class="info-description">
+                        The campaign seeks to raise awareness about the inclusion of people with 
+                        developmental disabilities in all facets of community life, 
+                        as well as awareness of the barriers that people with disabilities still 
+                        sometimes face in connecting to the communities in which they live.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseGender" role="button" aria-expanded="false" aria-controls="collapseGender">
+                    Gender Equality Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseGender">
+                    <div class="info-card" style="margin-left: 20px; background: #F25252;">
+                      <p class="info-title">Gender Equality Month</p>
+                        <img src="images/mar/mar-gender.png" class="info-picture">
+                      <p class="info-description">
+                        March is regarded as Gender Equality Month, which serves as a call to celebrate the history, 
+                        contributions, and wellness of community members who are impacted by gender-based bias and oppression.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseGreek" role="button" aria-expanded="false" aria-controls="collapseGreek">
+                    Greek-American Heritage Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseGreek">
+                    <div class="info-card" style="margin-left: 20px; background: #FFC94A;">
+                      <p class="info-title" style="color: black">Greek-American Heritage Month</p>
+                        <img src="images/mar/mar-greek.png" class="info-picture">
+                      <p class="info-description" style="color: black">
+                        Greek American Heritage Month, also called Hellenic Heritage Month, is celebrated every March 
+                        to celebrate Greek culture and history. It coincides with Greece's National Independence Day which occurs
+                        on Match 25.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseIrish" role="button" aria-expanded="false" aria-controls="collapseIrish">
+                    Irish-American Heritage Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseIrish">
+                    <div class="info-card" style="margin-left: 20px; background: #F9A4A1;">
+                      <p class="info-title">Irish-American Heritage Month</p>
+                        <img src="images/mar/mar-irish.png" class="info-picture">
+                      <p class="info-description">
+                        During Irish American Heritage Month, is observed every March 
+                        to celebrate every part of Irish culture and history. The first observance dates back to 1967
+                        with the first St. Patrick's Parade in New York City.
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseColon" role="button" aria-expanded="false" aria-controls="collapseColon">
+                    National Colon Cancer Awareness Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseColon">
+                    <div class="info-card" style="margin-left: 20px; background: #E8EBEE;">
+                      <p class="info-title" style="color: black">National Colon Cancer Awareness Month</p>
+                        <img src="images/mar/mar-colon.png" class="info-picture">
+                      <p class="info-description" style="color: black">
+                        Colorectal cancer is the second deadliest cancer in the United States. 
+                        Every March, National Colorectal Cancer Awareness Month spotlights this disease and inspires 
+                        more people to get checked starting at age 45.
+                      </p>
+                    </div>
+                  </div>
+                
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseKidney" role="button" aria-expanded="false" aria-controls="collapseKidney">
+                    National Kidney Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseKidney">
+                    <div class="info-card" style="margin-left: 20px; background: #0C569F;">
+                      <p class="info-title">National Kidney Month</p>
+                        <img src="images/mar/mar-kidney.png" class="info-picture">
+                      <p class="info-description">
+                        March is National Kidney Month. As many as 90% of Americans who have chronic kidney 
+                        disease don't know they have the disease until it is very advanced. 
+                        The earlier you find out you have kidney disease, the sooner you can take steps to protect your 
+                        kidneys from further damage.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseSclerosis" role="button" aria-expanded="false" aria-controls="collapseSclerosis">
+                    National Multiple Sclerosis Education and Awareness Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseSclerosis">
+                    <div class="info-card" style="margin-left: 20px; background: #00CAEC;">
+                      <p class="info-title">National Multiple Sclerosis Education and Awareness Month</p>
+                        <img src="images/mar/mar-sclerosis.png" class="info-picture">
+                      <p class="info-description">
+                        National Multiple Sclerosis Education and Awareness Month is observed in March of each year, 
+                        a nationwide effort by the Multiple Sclerosis Foundation and affiliated 
+                        groups to raise the public's awareness of multiple sclerosis.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseWomen" role="button" aria-expanded="false" aria-controls="collapseWomen">
+                    National Women's History Month
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseWomen">
+                    <div class="info-card" style="margin-left: 20px; background: #00886D;">
+                      <p class="info-title">National Women's History Month</p>
+                        <img src="images/mar/mar-women.png" class="info-picture">
+                      <p class="info-description">
+                        Women’s History Month began as a local celebration in Santa Rosa, California. 
+                        The Education Task Force of the Sonoma County (California) Commission on the Status 
+                        of Women planned and executed a “Women’s History Week” celebration in 1978.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="observance-heading" >Important March Dates</p>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseEmployee" role="button" aria-expanded="false" aria-controls="collapseEmployee">
+                    March 7 - Employee Appreciation Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseEmployee">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title">Employee Appreciation Day</p>
+                        <img src="images/mar/mar-employee.png" class="info-picture">
+                      <p class="info-description">
+                        Employee Appreciation Day is an event, observed on the first Friday in March, 
+                        meant for employers to give thanks or recognition to their employees. 
+                        It was created by Dr. Bob Nelson who was a founding member of Recognition 
+                        Professionals International in 1995, initially to celebrate the publication of 
+                        his book 1,001 Ways to Reward Employees and to remind employers to thank their 
+                        employees when they do good work. 
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseWomensDay" role="button" aria-expanded="false" aria-controls="collapseWomensDay">
+                    March 8 - International Women's Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseWomensDay">
+                    <div class="info-card" style="margin-left: 20px; background: #52B68A;">
+                      <p class="info-title">International Women's Day</p>
+                        <img src="images/mar/mar-womensday.png" class="info-picture" >
+                      <p class="info-description">
+                        International Women's Day (IWD) is a global holiday celebrated annually on March 8 as a 
+                        focal point in the women's rights movement, bringing attention to issues such as gender equality, 
+                        reproductive rights, and violence and abuse against women. Spurred on by the universal female suffrage 
+                        movement, IWD originated from labor movements in North America and Europe during the early 20th century.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapsePi" role="button" aria-expanded="false" aria-controls="collapsepi">
+                    March 14 - Pi Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapsePi">
+                    <div class="info-card" style="margin-left: 20px; background: #00CAEC;">
+                      <p class="info-title">Pi Day</p>
+                        <img src="images/mar/mar-pi.png" class="info-picture">
+                      <p class="info-description">
+                        Pi Day is an annual celebration of the mathematical constant π (pi). 
+                        Pi Day is observed on March 14 (the 3rd month) since 3, 1, and 4 are the first 
+                        three digits of π, and was 
+                        first celebrated in the United States.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseEqual" role="button" aria-expanded="false" aria-controls="collapseEqual">
+                    March 14 - Equal Pay Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseEqual">
+                    <div class="info-card" style="margin-left: 20px; background: #0C569F;">
+                      <p class="info-title">Equal Pay Day</p>
+                        <img src="images/mar/mar-equal.png" class="info-picture">
+                      <p class="info-description">
+                        The symbolic day was first observed in 1996 by the National Committee on Pay Equity, 
+                        a coalition of women's and civil rights organizations, labor unions, professional associations 
+                        and individuals working to eliminate sex and race 
+                        based wage discrimination and to achieve pay equity.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapsePatrick" role="button" aria-expanded="false" aria-controls="collapsePatrick">
+                    March 17 - St. Patrick's Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapsePatrick">
+                    <div class="info-card" style="margin-left: 20px; background: #E8EBEE;">
+                      <p class="info-title" style="color: black">St. Patrick's Day</p>
+                        <img src="images/mar/mar-patrick.png" class="info-picture">
+                      <p class="info-description" style="color: black">
+                        Saint Patrick's Day was made an official Christian feast day in the early 17th century 
+                        and is observed by the Catholic Church, the Anglican Communion (especially the Church of Ireland), 
+                        the Eastern Orthodox Church, and the Lutheran Church. The day commemorates Saint Patrick and the 
+                        arrival of Christianity in Ireland, and, by extension, celebrates the heritage and culture of the Irish in general.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseDown" role="button" aria-expanded="false" aria-controls="collapseDown">
+                    March 21 - World Down Syndrome Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseDown">
+                    <div class="info-card" style="margin-left: 20px; background: #A453C4;">
+                      <p class="info-title">World Down Syndrome Day</p>
+                        <img src="images/mar/mar-down.png" class="info-picture">
+                      <p class="info-description">
+                        Every year on March 21, World Down Syndrome Day is observed to create awareness 
+                        about Down syndrome. It is a condition in which a child is born with an extra 21st chromosome. 
+                        A common activity is wearing colorful or mismatched socks, 
+                        to show support for people with Down syndrome.
+                      </p>
+                    </div>
+                  </div>
+                 
+                  <li class="observances" data-bs-toggle="collapse" href="#collapsePurim" role="button" aria-expanded="false" aria-controls="collapsePurim">
+                    March 13 - Purim
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapsePurim">
+                    <div class="info-card" style="margin-left: 20px; background: #EF3831;">
+                      <p class="info-title">Purim</p>
+                        <img src="images/mar/mar-purim.png" class="info-picture">
+                      <p class="info-description">
+                        Purim is a Jewish holiday that celebrates the survival of the Jewish people 
+                        in ancient Persia after their Persian rulers marked them for death in the 5th century BCE.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseHoli" role="button" aria-expanded="false" aria-controls="collapseHoli">
+                    March 14 - Holi
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseHoli">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title">Holi <!--(Hindu)--></p>
+                        <img src="images/mar/mar-holi.png" class="info-picture">
+                      <p class="info-description">
+                        Holi is a popular and significant Hindu festival celebrated as the Festival of Colors, 
+                        Love, and Spring. It celebrates the eternal and divine love of the deities Radha and Krishna. Additionally, the day signifies the triumph of good over evil, as it commemorates the 
+                        victory of Vishnu as Narasimha over Hiranyakashipu.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseSlave" role="button" aria-expanded="false" aria-controls="collapseSlave">
+                    March 25 - International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseSlave">
+                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
+                      <p class="info-title">International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade</p>
+                        <img src="images/mar/mar-slave.png" class="info-picture">
+                      <p class="info-description">
+                        The day honours and remembers those who suffered and died as a consequence of the transatlantic slave trade, 
+                        which has been called "the worst violation of human rights in history", in which over 400 years more than 
+                        15 million men, women and children were the victims.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseHeart" role="button" aria-expanded="false" aria-controls="collapseHeart">
+                     March 27 - Laylat al-Qadr 
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseHeart">
+                    <div class="info-card" style="margin-left: 20px; background: #FFC94A;">
+                      <p class="info-title">Laylat al-Qadr <!--(Muslim)--></p>
+                        <img src="images/apr/apr-laylat.png" class="info-picture">
+                      <p class="info-description">
+                        The Night of Power (Night of Decree, or Night of Determination, 
+                        also the Precious Night), is, in Islamic belief, the night when Muslims believe the 
+                        Quran was first sent down from Heaven to the world and also the night when the 
+                        first verses of the Quran were revealed to the Islamic prophet Muhammad; 
+                        it is described to be better than a thousand months of worshipping.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseTransgender" role="button" aria-expanded="false" aria-controls="collapseTransgender">
+                     March 31 - International Transgender Day of Visibility
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseTransgender">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title">International Transgender Day of Visibility</p>
+                        <img src="images/mar/mar-transgender.png" class="info-picture">
+                      <p class="info-description">
+                        An annual event occurring on March 31 dedicated to celebrating transgender people and raising awareness 
+                        of discrimination faced by transgender people worldwide, as well as a celebration of their contributions 
+                        to society.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseAlFitr" role="button" aria-expanded="false" aria-controls="collapseAlFitr">
+                    March 31 - Eid al-Fitr 
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseAlFitr">
+                    <div class="info-card" style="margin-left: 20px; background: #52B68A;">
+                      <p class="info-title">Eid al-Fitr <!--(Islam)--></p>
+                        <img src="images/apr/apr-alfitr.png" class="info-picture">
+                      <p class="info-description">
+                        The religious holiday of Eid al-Fitr is celebrated by Muslims worldwide 
+                        because it marks the end of the month-long dawn-to-sunset fasting of Ramadan. 
+                        It is considered a very important and meaning observance in the Islamic religion.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="april-mobile" role="tabpanel" aria-labelledby="april-mobile-tab">
+            <div class="top-container">
+              <section data-firstday="7" class="mx-auto">
+                <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
+                <ol class="days">
+                  <li data-day="3"><time>1</time></li>
+                  <li><time>2</time></li>
+                  <li><time>3</time></li>
+                  <li><time>4</time></li>
+                  <li><time>5</time></li>
+                  <li><time>6</time></li>
+                  <li><time>7</time></li>
+                  <li><time>8</time></li>
+                  <li><time>9</time></li>
+                  <li><time>10</time></li>
+                  <li><time>11</time></li>
+                  <li><time>12</time></li>
+                  <li><time>13</time></li>
+                  <li><time>14</time></li>
+                  <li><time>15</time></li>
+                  <li><time>16</time></li>
+                  <li><time>17</time></li>
+                  <li><time>18</time></li>
+                  <li><time>19</time></li>
+                  <li><time>20</time></li>
+                  <li><time>21</time></li>
+                  <li><time>22</time></li>
+                  <li><time>23</time></li>
+                  <li><time>24</time></li>
+                  <li><time>25</time></li>
+                  <li><time>26</time></li>
+                  <li><time>27</time></li>
+                  <li><time>28</time></li>
+                  <li><time>29</time></li>
+                  <li><time>30</time></li>
+                  <li><time>31</time></li>
+                </ol>
+              </section>
+              <div class="banner-container mx-auto">
+                <img src="images/apr/apr-banner.png" class="banner-image">
+              </div>
+            </div>  
+            <div class="bottom-container" style="margin-left: 20px;">
+              <div class="date-container ">
+                <div>
+                  <p class="click-on-more">Click on an observance for more information</p>
+                  <p class="observance-heading">Month-long Observances</p>
                           
                   <li class="observances" data-bs-toggle="collapse" href="#collapseArab" role="button" aria-expanded="false" aria-controls="collapseArab">
                     National Arab-American Heritage Month
@@ -2076,18 +3157,8 @@
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="february-mobile" role="tabpanel" aria-labelledby="february-mobile-tab">
-            <%= render 'pages/february/feb_mobile'%>
-          </div>
-          <div class="tab-pane fade" id="march-mobile" role="tabpanel" aria-labelledby="march-mobile-tab">
-            <%= render 'pages/march/mar_mobile'%>
-          </div>
-          <div class="tab-pane fade" id="april-mobile" role="tabpanel" aria-labelledby="april-mobile-tab">
-            <%= render 'pages/april/apr_mobile'%>
           </div>
           <div class="tab-pane fade" id="may-mobile" role="tabpanel" aria-labelledby="may-mobile-tab">
             <%= render 'pages/may/may_mobile'%>
