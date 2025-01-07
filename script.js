@@ -12,7 +12,6 @@ function desktopMobile(w) {
     mob.style.display = "block"
   }
 }
-
 desktopMobile(wind)
 
 //defines current month
@@ -29,6 +28,35 @@ function currentMonthDisplay(mon) {
   currentMonthTab.classList.add("active")
 }
 currentMonthDisplay(current_month)
+
+//changes the opening view to the current month ON MOBILE
+function currentMonthDisplayMobile(mon) {
+  const currentMonthDiv = document.getElementById(mon + "-mobile");
+  currentMonthDiv.classList.add("show");
+  currentMonthDiv.classList.add("active")
+  const currentMonthTab = document.getElementById(mon + "-mobile-tab");
+  currentMonthTab.classList.add("active")
+}
+currentMonthDisplayMobile(current_month)
+
+//changes the tab display to the current month on MOBILE
+const monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const currentMonthNumber = new Date();
+
+const displayTab = document.getElementById("display-tab");
+displayTab.innerText = monthList[currentMonthNumber.getMonth()];
+
+// Loop through all month tabs and add event listeners
+for (let i = 0; i < monthList.length; i++) {
+  const tabId = `${monthList[i].toLowerCase()}-mobile-tab`; // Generate the tab ID dynamically
+  const tabElement = document.getElementById(tabId);
+  
+  if (tabElement) {  // Check if the element exists (in case some months are missing from HTML)
+    tabElement.addEventListener("click", function() {
+      displayTab.innerText = monthList[i]; // Update the display tab text
+    });
+  }
+}
 
 
 
@@ -424,62 +452,4 @@ decNewYearsEve.addEventListener("click", function() {
 })
 decBoxing.addEventListener("click", function() {
   changeDisplay(decDivBoxing, decDivList)
-})
-
-
-
-const monthList = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-const currentMonthNumber = new Date();
-
-const displayTab = document.getElementById("display-tab");
-displayTab.innerText = monthList[currentMonthNumber.getMonth()];
-
-const janTab = document.getElementById("january-mobile-tab");
-const febTab = document.getElementById("february-mobile-tab");
-const marTab = document.getElementById("march-mobile-tab");
-const aprTab = document.getElementById("april-mobile-tab");
-const mayTab = document.getElementById("may-mobile-tab");
-const junTab = document.getElementById("june-mobile-tab");
-const julTab = document.getElementById("july-mobile-tab");
-const augTab = document.getElementById("august-mobile-tab");
-const sepTab = document.getElementById("september-mobile-tab");
-const octTab = document.getElementById("october-mobile-tab");
-const novTab = document.getElementById("november-mobile-tab");
-const decTab = document.getElementById("december-mobile-tab");
-
-janTab.addEventListener("click", function() {
-  displayTab.innerText = "January"
-})
-febTab.addEventListener("click", function() {
-  displayTab.innerText = "February"
-})
-marTab.addEventListener("click", function() {
-  displayTab.innerText = "March"
-})
-aprTab.addEventListener("click", function() {
-  displayTab.innerText = "April"
-})
-mayTab.addEventListener("click", function() {
-  displayTab.innerText = "May"
-})
-junTab.addEventListener("click", function() {
-  displayTab.innerText = "June"
-})
-julTab.addEventListener("click", function() {
-  displayTab.innerText = "July"
-})
-augTab.addEventListener("click", function() {
-  displayTab.innerText = "August"
-})
-sepTab.addEventListener("click", function() {
-  displayTab.innerText = "September"
-})
-octTab.addEventListener("click", function() {
-  displayTab.innerText = "October"
-})
-novTab.addEventListener("click", function() {
-  displayTab.innerText = "November"
-})
-decTab.addEventListener("click", function() {
-  displayTab.innerText = "December"
 })
