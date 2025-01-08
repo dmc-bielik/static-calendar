@@ -470,7 +470,83 @@ aprEarthMonth.addEventListener("click", function() {
   changeDisplay(aprDivEarthMonth, aprDivList)
 })
 
+// MAY
+const mayDivALS = document.getElementById("may-div-als");
+const mayDivHaitian = document.getElementById("may-div-haitian");
+const mayDivJewishAmerican = document.getElementById("may-div-jewishamerican");
+const mayDivMental = document.getElementById("may-div-mental");
+const mayDivAsianAmerican = document.getElementById("may-div-asianamerican");
+const mayDivOlder = document.getElementById("may-div-older");
+const mayDivCinco = document.getElementById("may-div-cinco");
+const mayDivHashoah = document.getElementById("may-div-hashoah");
+const mayDivHomophobia = document.getElementById("may-div-homophobia");
+const mayDivDialogue = document.getElementById("may-div-dialogue");
+const mayDivBab = document.getElementById("may-div-bab");
+const mayDivMemorial = document.getElementById("may-div-memorial");
+const mayDivAsension = document.getElementById("may-div-ascension");
 
+
+
+
+const mayDivList = [mayDivALS, mayDivHaitian, mayDivJewishAmerican, mayDivMental, mayDivAsianAmerican, 
+                    mayDivOlder, mayDivCinco, mayDivHashoah, mayDivHomophobia, mayDivDialogue, mayDivBab, 
+                    mayDivMemorial, mayDivAsension]
+
+const mayALS = document.getElementById("may-als")
+const mayHaitian = document.getElementById("may-haitian")
+const mayJewishAmerican= document.getElementById("may-jewishamerican")
+const mayMental = document.getElementById("may-mental")
+const mayAsianAmerican = document.getElementById("may-asianamerican")
+const mayOlder = document.getElementById("may-older")
+const mayCinco = document.getElementById("may-cinco")
+const mayHashoah = document.getElementById("may-hashoah")
+const mayHomophobia = document.getElementById("may-homophobia")
+const mayDialogue = document.getElementById("may-dialogue")
+const mayBab = document.getElementById("may-bab")
+const mayMemorial = document.getElementById("may-memorial")
+const mayAscension = document.getElementById("may-ascension")
+
+
+
+mayALS.addEventListener("click", function() {
+  changeDisplay(mayDivALS, mayDivList)
+})
+mayHaitian.addEventListener("click", function() {
+  changeDisplay(mayDivHaitian, mayDivList)
+})
+mayJewishAmerican.addEventListener("click", function() {
+  changeDisplay(mayDivJewishAmerican, mayDivList)
+})
+mayMental.addEventListener("click", function() {
+  changeDisplay(mayDivMental, mayDivList)
+})
+mayAsianAmerican.addEventListener("click", function() {
+  changeDisplay(mayDivAsianAmerican, mayDivList)
+})
+mayOlder.addEventListener("click", function() {
+  changeDisplay(mayDivOlder, mayDivList)
+})
+mayCinco.addEventListener("click", function() {
+  changeDisplay(mayDivCinco, mayDivList)
+})
+//mayHashoah.addEventListener("click", function() {
+//  changeDisplay(mayDivHashoah, mayDivList)
+//})
+mayHomophobia.addEventListener("click", function() {
+  changeDisplay(mayDivHomophobia, mayDivList)
+})
+mayDialogue.addEventListener("click", function() {
+  changeDisplay(mayDivDialogue, mayDivList)
+})
+mayBab.addEventListener("click", function() {
+  changeDisplay(mayDivBab, mayDivList)
+})
+mayMemorial.addEventListener("click", function() {
+  changeDisplay(mayDivMemorial, mayDivList)
+})
+mayAscension.addEventListener("click", function() {
+  changeDisplay(mayDivAsension, mayDivList)
+})
 
 // DECEMBER
 const decDivAidsMonth = document.getElementById("dec-div-aidsmonth");
