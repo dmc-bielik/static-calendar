@@ -548,6 +548,75 @@ mayAscension.addEventListener("click", function() {
   changeDisplay(mayDivAsension, mayDivList)
 })
 
+//JUNE
+const junDivBrain = document.getElementById("jun-div-brain");
+const junDivMusic = document.getElementById("jun-div-music");
+const junDivCaribbean = document.getElementById("jun-div-caribbean");
+const junDivPrideMonth = document.getElementById("jun-div-pridemonth");
+const junDivEnvironment = document.getElementById("jun-div-environment");
+const junDivLoving = document.getElementById("jun-div-loving");
+const junDivAdha = document.getElementById("jun-div-adha");
+const junDivJuneteenth = document.getElementById("jun-div-juneteenth");
+const junDivRefugee = document.getElementById("jun-div-refugee");
+const junDivSolstice = document.getElementById("jun-div-solstice");
+const junDivPrideDay = document.getElementById("jun-div-prideday");
+const junDivMuharram = document.getElementById("jun-div-muharram");
+
+
+const junDivList = [junDivBrain, junDivMusic, junDivCaribbean, junDivPrideMonth, junDivEnvironment, 
+                    junDivLoving, junDivAdha, junDivJuneteenth, junDivRefugee, junDivSolstice,
+                    junDivPrideDay, junDivMuharram]
+
+const junBrain = document.getElementById("jun-brain")
+const junMusic = document.getElementById("jun-music")
+const junCaribbean = document.getElementById("jun-caribbean")
+const junPrideMonth = document.getElementById("jun-pridemonth")
+const junEnvironment = document.getElementById("jun-environment")
+const junLoving = document.getElementById("jun-loving")
+const junAdha = document.getElementById("jun-adha")
+const junJuneteenth = document.getElementById("jun-juneteenth")
+const junRefugee = document.getElementById("jun-refugee")
+const junSolstice = document.getElementById("jun-solstice")
+const junPrideDay = document.getElementById("jun-prideday")
+const junMuharram = document.getElementById("jun-muharram")
+
+junBrain.addEventListener("click", function() {
+  changeDisplay(junDivBrain, junDivList)
+})
+junMusic.addEventListener("click", function() {
+  changeDisplay(junDivMusic, junDivList)
+})
+junCaribbean.addEventListener("click", function() {
+  changeDisplay(junDivCaribbean, junDivList)
+})
+junPrideMonth.addEventListener("click", function() {
+  changeDisplay(junDivPrideMonth, junDivList)
+})
+junEnvironment.addEventListener("click", function() {
+  changeDisplay(junDivEnvironment, junDivList)
+})
+junLoving.addEventListener("click", function() {
+  changeDisplay(junDivLoving, junDivList)
+})
+junAdha.addEventListener("click", function() {
+  changeDisplay(junDivAdha, junDivList)
+})
+junJuneteenth.addEventListener("click", function() {
+  changeDisplay(junDivJuneteenth, junDivList)
+})
+junRefugee.addEventListener("click", function() {
+  changeDisplay(junDivRefugee, junDivList)
+})
+junSolstice.addEventListener("click", function() {
+  changeDisplay(junDivSolstice, junDivList)
+})
+junPrideDay.addEventListener("click", function() {
+  changeDisplay(junDivPrideDay, junDivList)
+})
+junMuharram.addEventListener("click", function() {
+  changeDisplay(junDivMuharram, junDivList)
+})
+
 // DECEMBER
 const decDivAidsMonth = document.getElementById("dec-div-aidsmonth");
 const decDivHumanMonth = document.getElementById("dec-div-humanmonth");
