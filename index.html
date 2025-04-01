@@ -1321,6 +1321,12 @@
                     <li id="apr-autismday" class="observances">
                       April 2 - World Autism Awareness Day
                     </li>
+                    <li id= "apr-silence" class="observances">
+                      April 11 - National Day of Silence
+                    </li>
+                    <li id= "apr-passover" class="observances">
+                      April 12-20 - Passover
+                    </li>
                     <li id="apr-palm" class="observances">
                       April 13 - Palm Sunday
                     </li>  
@@ -1330,20 +1336,14 @@
                     <li id="apr-easter" class="observances">
                       April 20 - Easter
                     </li>  
-                    <li id= "apr-silence" class="observances">
-                      April 11 - National Day of Silence
-                    </li>
-                    <li id="apr-hashoah" class="observances">
-                      April 23 - Yom Hashoah
-                    </li>
                     <li id="apr-ridvan" class="observances">
-                      April 21 - Start of Ridvan
+                      April 20 - Start of Ridvan
                     </li>
                     <li id="apr-earthday" class="observances">
                       April 22 - Earth Day
                     </li>
-                    <li id= "apr-passover" class="observances">
-                      April 1-9 - Passover
+                    <li id="apr-hashoah" class="observances">
+                      April 23 - Yom Hashoah
                     </li>
                   </div>
                   
@@ -5070,6 +5070,45 @@
                       </p>
                     </div>
                   </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseSilence" role="button" aria-expanded="false" aria-controls="collapseSilence">
+                    <script>
+                      document.addEventListener("DOMContentLoaded", () => {
+                        const silenceElement = document.querySelector('[href="#collapseSilence"]');
+                        const currentYear = new Date().getFullYear();
+                        let silenceDate;
+                        if (currentYear === 2025) {
+                          silenceDate = "11";
+                        } else {
+                          silenceDate = "(second Friday)";
+                        }
+                        silenceElement.innerHTML = `April ${silenceDate} - National Day of Silence`;
+                      });
+                    </script>
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseSilence">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title">National Day of Silence</p>
+                      <img src="images/apr/apr-silence.png" class="info-picture">
+                      <p class="info-description">
+                        Day of Silence is GLSEN's annual day of action to spread awareness about the effects of the 
+                        bullying and harassment of lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) students.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapsePassover" role="button" aria-expanded="false" aria-controls="collapsePassover">
+                    April 12-20 - Passover
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapsePassover">
+                    <div class="info-card" style="margin-left: 20px; background: #A453C4;">
+                      <p class="info-title">Passover <!--(Jewish)--></p>
+                      <img src="images/apr/apr-passover.png" class="info-picture">
+                      <p class="info-description">
+                        Passover, also called Pesach, is a major Jewish holiday, one of the three pilgrimage festivals, 
+                        that celebrates the Biblical story of the Israelites' escape from slavery in Egypt. Pesach starts on the 15th day of the Hebrew month of Nisan 
+                        which is considered the first month of the Hebrew year.
+                      </p>
+                    </div>
+                  </div>
                   <li class="observances" data-bs-toggle="collapse" href="#collapsePalm" role="button" aria-expanded="false" aria-controls="collapsePalm">
                     April 13 - Palm Sunday
                   </li>
@@ -5086,7 +5125,7 @@
                     </div>
                   </div>
                   <li class="observances" data-bs-toggle="collapse" href="#collapseFriday" role="button" aria-expanded="false" aria-controls="collapseFriday">
-                    April 19 - Good Friday
+                    April 18 - Good Friday
                   </li>
                   <div class="collapse" style="padding-top: 10px;" id="collapseFriday">
                     <div class="info-card" style="margin-left: 20px; background: #0A085A;">
@@ -5102,7 +5141,7 @@
                     </div>
                   </div>
                   <li class="observances" data-bs-toggle="collapse" href="#collapseEaster" role="button" aria-expanded="false" aria-controls="collapseEaster">
-                    April 9 - Easter
+                    April 20 - Easter
                   </li>
                   <div class="collapse" style="padding-top: 10px;" id="collapseEaster">
                     <div class="info-card" style="margin-left: 20px; background: #FFC94A;">
@@ -5115,50 +5154,8 @@
                       </p>
                     </div>
                   </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseSilence" role="button" aria-expanded="false" aria-controls="collapseSilence">
-                    <script>
-                      document.addEventListener("DOMContentLoaded", () => {
-                        const silenceElement = document.querySelector('[href="#collapseSilence"]');
-                        const currentYear = new Date().getFullYear();
-                        let silenceDate;
-                        if (currentYear === 2025) {
-                          silenceDate = "11";
-                        } else {
-                          silenceDate = "(second Friday)";
-                        }
-                        silenceElement.innerHTML = `April ${silenceDate} - National Day of Silence`;
-                      });
-                    </script>
-                  </li>
-                  
-                  <div class="collapse" style="padding-top: 10px;" id="collapseSilence">
-                    <div class="info-card" style="margin-left: 20px; background: #F36;">
-                      <p class="info-title">National Day of Silence</p>
-                      <img src="images/apr/apr-silence.png" class="info-picture">
-                      <p class="info-description">
-                        Day of Silence is GLSEN's annual day of action to spread awareness about the effects of the 
-                        bullying and harassment of lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) students.
-                      </p>
-                    </div>
-                  </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseHashoah" role="button" aria-expanded="false" aria-controls="collapseHashoah">
-                     April 23 - Yom Hashoah
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseHashoah">
-                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
-                      <p class="info-title">Yom Hashoah (Jewish)</p>
-                      <img src="images/may/may-hashoah.png" class="info-picture">
-                      <p class="info-description">
-                        Yom HaZikaron laShoah ve-laG'vurah, known colloquially in Israel and 
-                        abroad as Yom HaShoah, and in English as International Holocaust Remembrance Day, or Holocaust Day, is observed 
-                        as Israel's day of commemoration for the approximately six million Jews murdered in the Holocaust by Nazi Germany 
-                        and its collaborators, and for the Jewish resistance in that period.
-                      </p>
-                    </div>
-                  </div>
-                  
                   <li class="observances" data-bs-toggle="collapse" href="#collapseRidvan" role="button" aria-expanded="false" aria-controls="collapseRidvan">
-                    April 21 - Start of Ridvan
+                    April 20 - Start of Ridvan
                   </li>
                   <div class="collapse" style="padding-top: 10px;" id="collapseRidvan">
                     <div class="info-card" style="margin-left: 20px; background: #00CAEC;">
@@ -5171,8 +5168,6 @@
                       </p>
                     </div>
                   </div>
-                  
-                  
                   <li class="observances" data-bs-toggle="collapse" href="#collapseEarthDay" role="button" aria-expanded="false" aria-controls="collapseEarthDay">
                     April 22 - Earth Day
                   </li>
@@ -5188,17 +5183,18 @@
                     </div>
                   </div>
                   
-                  <li class="observances" data-bs-toggle="collapse" href="#collapsePassover" role="button" aria-expanded="false" aria-controls="collapsePassover">
-                    April 1-9 - Passover
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseHashoah" role="button" aria-expanded="false" aria-controls="collapseHashoah">
+                     April 23 - Yom Hashoah
                   </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapsePassover">
-                    <div class="info-card" style="margin-left: 20px; background: #A453C4;">
-                      <p class="info-title">Passover <!--(Jewish)--></p>
-                      <img src="images/apr/apr-passover.png" class="info-picture">
+                  <div class="collapse" style="padding-top: 10px;" id="collapseHashoah">
+                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
+                      <p class="info-title">Yom Hashoah (Jewish)</p>
+                      <img src="images/may/may-hashoah.png" class="info-picture">
                       <p class="info-description">
-                        Passover, also called Pesach, is a major Jewish holiday, one of the three pilgrimage festivals, 
-                        that celebrates the Biblical story of the Israelites' escape from slavery in Egypt. Pesach starts on the 15th day of the Hebrew month of Nisan 
-                        which is considered the first month of the Hebrew year.
+                        Yom HaZikaron laShoah ve-laG'vurah, known colloquially in Israel and 
+                        abroad as Yom HaShoah, and in English as International Holocaust Remembrance Day, or Holocaust Day, is observed 
+                        as Israel's day of commemoration for the approximately six million Jews murdered in the Holocaust by Nazi Germany 
+                        and its collaborators, and for the Jewish resistance in that period.
                       </p>
                     </div>
                   </div>
