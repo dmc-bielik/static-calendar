@@ -4068,7 +4068,7 @@
                             2025: "December 14-22",
                             2026: "December 4-12"
                           };
-                          document.write(`${dates[year] || "Date varies"} - Hannukkah`);
+                          document.write(`${dates[year] || "Date varies"} - Hanukkah`);
                         })();
                       </script>
                     </li>
@@ -7594,6 +7594,29 @@
                       </p>
                     </div>
                   </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseHanukkah" role="button" aria-expanded="false" aria-controls="collapseHanukkah">
+                    <script>
+                      (function () {
+                        const year = new Date().getFullYear();
+                        const dates = { 2025: "December 14", 2026: "December 4" };
+                       document.write(`${dates[year] || "Date varies"} - Hanukkah begins`);
+                      })();
+                    </script>
+                    
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseHanukkah">
+                    <div class="info-card" style="margin-left: 20px; background: #7493E1;">
+                      <p class="info-title" >Hanukkah</p>
+                      <img src="images/dec/dec-hanukkah.png" class="info-picture">
+                      <p class="info-description" >
+                        Hanukkah is a Jewish festival commemorating the recovery of Jerusalem and subsequent rededication of the 
+                        Second Temple at the beginning of the Maccabean Revolt against the Seleucid Empire in the 2nd century BCE. 
+                        Hanukkah is observed for eight nights and days, starting on the 25th day of Kislev according to the Hebrew calendar,
+                         which may occur at any time from late November to late December in the Gregorian calendar. The festival is 
+                         observed by lighting the candles of a candelabrum with nine branches, commonly called a menorah or hanukkiah. 
+                      </p>
+                    </div>
+                  </div>
                   <li class="observances" data-bs-toggle="collapse" href="#collapseVolunteer" role="button" aria-expanded="false" aria-controls="collapseVolunteer">
                     December 5 - International Volunteer Day
                   </li>
@@ -7639,29 +7662,7 @@
                       </p>
                     </div>
                   </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseHanukkah" role="button" aria-expanded="false" aria-controls="collapseHanukkah">
-                    <script>
-                      (function () {
-                        const year = new Date().getFullYear();
-                        const dates = { 2025: "December 14", 2026: "December 4" };
-                       document.write(`${dates[year] || "Date varies"} - Hanukkah begins`);
-                      })();
-                    </script>
-                    
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseHanukkah">
-                    <div class="info-card" style="margin-left: 20px; background: #7493E1;">
-                      <p class="info-title" >Hanukkah</p>
-                      <img src="images/dec/dec-hanukkah.png" class="info-picture">
-                      <p class="info-description" >
-                        Hanukkah is a Jewish festival commemorating the recovery of Jerusalem and subsequent rededication of the 
-                        Second Temple at the beginning of the Maccabean Revolt against the Seleucid Empire in the 2nd century BCE. 
-                        Hanukkah is observed for eight nights and days, starting on the 25th day of Kislev according to the Hebrew calendar,
-                         which may occur at any time from late November to late December in the Gregorian calendar. The festival is 
-                         observed by lighting the candles of a candelabrum with nine branches, commonly called a menorah or hanukkiah. 
-                      </p>
-                    </div>
-                  </div>
+                  
                   <li class="observances" data-bs-toggle="collapse" href="#collapseSolstice" role="button" aria-expanded="false" aria-controls="collapseSolstice">
                     December 21 - Yule Winter Solstice
                   </li>
