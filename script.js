@@ -149,7 +149,7 @@ const febDivBlackHistory = document.getElementById("feb-div-blackhistory");
 const febDivFreedom = document.getElementById("feb-div-freedom");
 const febDivRosa = document.getElementById("feb-div-rosa");
 const febDivInternet = document.getElementById("feb-div-internet");
-// const febDivChineseNewYear = document.getElementById("feb-div-chinesenewyear");
+const febDivChineseNewYear = document.getElementById("feb-div-chinesenewyear");
 const febDivScience = document.getElementById("feb-div-science");
 const febDivEpilepsy = document.getElementById("feb-div-epilepsy");
 // const febDivMardi = document.getElementById("feb-div-mardi");
@@ -164,14 +164,14 @@ const febDivShivratri = document.getElementById("feb-div-shivratri")
 
 const febDivList = [febDivEthnic, febDivHeart, febDivBlackHistory, febDivFreedom, febDivRosa, febDivInternet, 
                      febDivScience, febDivEpilepsy, febDivValentines, febDivNirvana, febDivCancer, febDivJustice, 
-                     febDivShivratri, febDivRamadan]
+                     febDivShivratri, febDivRamadan, febDivChineseNewYear]
 
-const febHeart = document.getElementById("feb-heart")
-const febBlackHistory = document.getElementById("feb-blackhistory")
+const febHeart = document.getElementById("feb-heart");
+const febBlackHistory = document.getElementById("feb-blackhistory");
 const febFreedom = document.getElementById("feb-freedom")
 const febRosa = document.getElementById("feb-rosa")
 const febInternet = document.getElementById("feb-internet")
-// const febChineseNewYear= document.getElementById("feb-chinesenewyear")
+const febChineseNewYear = document.getElementById("feb-chinesenewyear")
 const febScience = document.getElementById("feb-science")
 const febEpilepsy = document.getElementById("feb-epilepsy")
 // const febMardi = document.getElementById("feb-mardi")
@@ -199,9 +199,9 @@ febRosa.addEventListener("click", function() {
 febInternet.addEventListener("click", function() {
   changeDisplay(febDivInternet, febDivList)
 })
-//febChineseNewYear.addEventListener("click", function() {
-//changeDisplay(febDivChineseNewYear, febDivList)
-//})
+febChineseNewYear.addEventListener("click", function() {
+  changeDisplay(febDivChineseNewYear, febDivList)
+})
 febScience.addEventListener("click", function() {
   changeDisplay(febDivScience, febDivList)
 })
