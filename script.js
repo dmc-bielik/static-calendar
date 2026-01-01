@@ -71,6 +71,10 @@ function changeDisplay(div, divList) {
   }
 }
 
+
+
+
+
 //JANUARY
 const janDivMentor = document.getElementById("jan-div-mentor");
 const janDivPoverty = document.getElementById("jan-div-poverty");
@@ -1081,3 +1085,5 @@ decNewYearsEve.addEventListener("click", function() {
 decBoxing.addEventListener("click", function() {
   changeDisplay(decDivBoxing, decDivList)
 })
+
+

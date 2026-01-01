@@ -41,9 +41,11 @@
               <li class="nav-item menu-item px-2">
                  <a href="index.html" class="nav-link"> Current Month</a>  
               </li>
+              <!--
               <li class="nav-item menu-item px-2">
                 <a href="https://forms.gle/4GV7UnfHUh9vJnKy9" class="nav-link" target="_blank">Download PDF Version</a>  
               </li>
+            -->
               <li class="nav-item menu-item px-2">
                 <a href="about.html" class="nav-link">About DMC</a> 
               </li>
@@ -106,7 +108,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="3"><time>1</time></li>
+                    <li id="jan-first-day" data-day="4"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -451,7 +453,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day=6><time>1</time></li>
+                    <li id="feb-first-day" data-day="0"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -510,6 +512,19 @@
                     <li id="feb-rosa" class="observances">
                       February 4 - Rosa Parks Day
                     </li>
+
+                    <li id="feb-epilepsy" class="observances">
+                      <script>
+                        (function () {
+                          const year = new Date().getFullYear();
+                          const dates = {
+                            2025: "February 10",
+                            2026: "February 9"
+                          };
+                          document.write(`${dates[year] || "Second Monday in February"} - International Epilepsy Day`);
+                        })();
+                      </script>
+                    </li>
                   
                     <li id="feb-internet" class="observances">
                       <script>
@@ -525,18 +540,7 @@
                     </li>
                     
                   
-                    <li id="feb-epilepsy" class="observances">
-                      <script>
-                        (function () {
-                          const year = new Date().getFullYear();
-                          const dates = {
-                            2025: "February 10",
-                            2026: "February 9"
-                          };
-                          document.write(`${dates[year] || "Second Monday in February"} - International Epilepsy Day`);
-                        })();
-                      </script>
-                    </li>
+                    
                   
                     <li id="feb-science" class="observances">
                       February 11 - International Day of Women & Girls in Science
@@ -554,6 +558,32 @@
                       February 15 - International Childhood Cancer Day
                     </li>
 
+                    <li id="feb-shivratri" class="observances">
+                      <script>
+                        (function () {
+                          const year = new Date().getFullYear();
+                          const dates = {
+                            2025: "February 26",
+                            2026: "February 15"
+                          };
+                          document.write(`${dates[year] || "Date varies"} - Maha Shivaratri`);
+                        })();
+                      </script>
+                    </li>
+
+                    <li id="feb-ramadan" class="observances">
+                      <script>
+                        (function () {
+                          const year = new Date().getFullYear();
+                          const dates = {
+                            2025: "February 28",
+                            2026: "February 17"
+                          };
+                          document.write(`${dates[year] || "Date varies"} - Ramadan begins`);
+                        })();
+                      </script>
+                    </li>
+
                     <li id="feb-chinesenewyear" class="observances">
                       <script>
                         (function () {
@@ -569,31 +599,9 @@
                       February 20 - World Day of Social Justice
                     </li>
                   
-                    <li id="feb-shivratri" class="observances">
-                      <script>
-                        (function () {
-                          const year = new Date().getFullYear();
-                          const dates = {
-                            2025: "February 26",
-                            2026: "February 15"
-                          };
-                          document.write(`${dates[year] || "Date varies"} - Maha Shivaratri`);
-                        })();
-                      </script>
-                    </li>
+                    
                   
-                    <li id="feb-ramadan" class="observances">
-                      <script>
-                        (function () {
-                          const year = new Date().getFullYear();
-                          const dates = {
-                            2025: "February 28",
-                            2026: "February 17"
-                          };
-                          document.write(`${dates[year] || "Date varies"} - Ramadan begins`);
-                        })();
-                      </script>
-                    </li>
+                    
                   </div>
                 </div>
                 <div class="description-container mx-auto">
@@ -864,7 +872,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                     <ol class="days">
-                      <li data-day=6><time>1</time></li>
+                      <li data-day="0"><time>1</time></li>
                       <li><time>2</time></li>
                       <li><time>3</time></li>
                       <li><time>4</time></li>
@@ -941,6 +949,32 @@
                   </div>
                   <div>
                     <p class="observance-heading" >Important March Dates</p>
+
+                     <li id="mar-purim" class="observances">
+                      <script>
+                        (function () {
+                          const year = new Date().getFullYear();
+                          const dates = {
+                            2025: "March 14",
+                            2026: "March 4"
+                          };
+                          document.write(`${dates[year] || "Date varies"} - Purim`);
+                        })();
+                      </script>
+                    </li>
+
+                     <li id="mar-holi" class="observances">
+                      <script>
+                        (function () {
+                          const year = new Date().getFullYear();
+                          const dates = {
+                            2025: "March 14",
+                            2026: "March 4"
+                          };
+                          document.write(`${dates[year] || "Date varies"} - Holi`);
+                        })();
+                      </script>
+                    </li>
                     <li id="mar-employee" class="observances">
                       <script>
                         (function () {
@@ -956,54 +990,16 @@
                     <li id="mar-womensday" class="observances">
                       March 8 - International Women's Day
                     </li>
-                    <li id="mar-purim" class="observances">
-                      <script>
-                        (function () {
-                          const year = new Date().getFullYear();
-                          const dates = {
-                            2025: "March 14",
-                            2026: "March 4"
-                          };
-                          document.write(`${dates[year] || "Date varies"} - Purim`);
-                        })();
-                      </script>
-                    </li>
-                    <li id="mar-holi" class="observances">
-                      <script>
-                        (function () {
-                          const year = new Date().getFullYear();
-                          const dates = {
-                            2025: "March 14",
-                            2026: "March 4"
-                          };
-                          document.write(`${dates[year] || "Date varies"} - Holi`);
-                        })();
-                      </script>
-                    </li>
+                   
+                   
                     <li id="mar-pi" class="observances">
                       March 14 - Pi Day
                     </li>
-                    <li id="mar-equal" class="observances">
-                      <script>
-                        (function () {
-                          const year = new Date().getFullYear();
-                          const dates = {
-                            2025: "March 25",
-                            2026: "March 24"
-                          };
-                          document.write(`${dates[year] || "Date varies"} - Equal Pay Day`);
-                        })();
-                      </script>
-                    </li>
+                    
                     <li id="mar-patrick" class="observances">
                       March 17 - St. Patrick's Day
                     </li>
-                    <li id="mar-down" class="observances">
-                      March 21 - World Down Syndrome Day
-                    </li>
-                    <li id="mar-slave" class="observances">
-                      March 25 - International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade
-                    </li>
+
                     <li id="mar-laylat" class="observances">
                       <script>
                         (function () {
@@ -1029,9 +1025,6 @@
                         })();
                       </script>
                     </li>
-                    <li id="mar-transgender" class="observances">
-                      March 31 - International Transgender Day of Visibility
-                    </li>
                     <li id="mar-eidalfitr" class="observances">
                       <script>
                         (function () {
@@ -1044,6 +1037,32 @@
                         })();
                       </script>
                     </li>
+                    <li id="mar-down" class="observances">
+                      March 21 - World Down Syndrome Day
+                    </li>
+
+                    <li id="mar-equal" class="observances">
+                      <script>
+                        (function () {
+                          const year = new Date().getFullYear();
+                          const dates = {
+                            2025: "March 25",
+                            2026: "March 24"
+                          };
+                          document.write(`${dates[year] || "Date varies"} - Equal Pay Day`);
+                        })();
+                      </script>
+                    </li>
+                    <li id="mar-slave" class="observances">
+                      March 25 - International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade
+                    </li>
+                    
+
+                    
+                    <li id="mar-transgender" class="observances">
+                      March 31 - International Transgender Day of Visibility
+                    </li>
+                    
                   </div>
                 </div>
                 <div class="description-container mx-auto">
@@ -1420,7 +1439,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days" ><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                     <ol class="days">
-                      <li data-day=2><time>1</time></li>
+                      <li data-day="3"><time>1</time></li>
                       <li><time>2</time></li>
                       <li><time>3</time></li>
                       <li><time>4</time></li>
@@ -1490,13 +1509,6 @@
                   </div>
                   <div>
                     <p class="observance-heading">Important April Dates</p>
-                          
-                    <li id="apr-autismday" class="observances">
-                      April 2 - World Autism Awareness Day
-                    </li>
-                    <li id= "apr-silence" class="observances">
-                      April 11 - National Day of Silence
-                    </li>
                     <li id= "apr-passover" class="observances">
                       <script>
                         (function () {
@@ -1508,19 +1520,11 @@
                           document.write(`${dates[year] || "Date varies"} - Passover`);
                         })();
                       </script>
+                    </li>      
+                    <li id="apr-autismday" class="observances">
+                      April 2 - World Autism Awareness Day
                     </li>
-                    <li id="apr-palm" class="observances">
-                      <script>
-                        (function () {
-                          const year = new Date().getFullYear();
-                    
-                          if (year === 2025) {
-                            document.write("April 13 - Palm Sunday");
-                          }
-                        })();
-                      </script>
-                      
-                    </li>  
+
                     <li id="apr-friday" class="observances">
 
                       <script>
@@ -1535,7 +1539,8 @@
                       </script>
                       
                     </li>  
-                    <li id="apr-easter" class="observances">
+
+                     <li id="apr-easter" class="observances">
                       <script>
                         (function () {
                           const year = new Date().getFullYear();
@@ -1548,12 +1553,10 @@
                       </script>
                     
                     </li>  
-                    <li id="apr-ridvan" class="observances">
-                      April 20 - Start of Ridvan
+                    <li id= "apr-silence" class="observances">
+                      April 11 - National Day of Silence
                     </li>
-                    <li id="apr-earthday" class="observances">
-                      April 22 - Earth Day
-                    </li>
+                    
                     <li id="apr-hashoah" class="observances">
                       <script>
                         (function () {
@@ -1568,6 +1571,27 @@
 
                       
                     </li>
+                    <li id="apr-palm" class="observances">
+                      <script>
+                        (function () {
+                          const year = new Date().getFullYear();
+                    
+                          if (year === 2025) {
+                            document.write("April 13 - Palm Sunday");
+                          }
+                        })();
+                      </script>
+                      
+                    </li>  
+                    
+                   
+                    <li id="apr-ridvan" class="observances">
+                      April 20 - Start of Ridvan
+                    </li>
+                    <li id="apr-earthday" class="observances">
+                      April 22 - Earth Day
+                    </li>
+                    
                   </div>
                   
                 </div>
@@ -1829,7 +1853,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days" ><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="4"><time>1</time></li>
+                    <li data-day="5"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -2134,7 +2158,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="0"><time>1</time></li>
+                    <li data-day="1"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -2208,15 +2232,7 @@
                     <li id="jun-loving" class="observances">
                       June 12 - Loving Day
                     </li>
-                    <li id="jun-juneteenth" class="observances">
-                      June 19 - Juneteenth
-                    </li>
-                    <li id="jun-refugee" class="observances">
-                      June 20 - World Refugee Day
-                    </li>
-                    <li id="jun-solstice" class="observances">
-                      June 21 - Summer solstice
-                    </li>
+
                     <li id="jun-muharram" class="observances">
                       <script>
                         (function () {
@@ -2230,6 +2246,16 @@
                       </script>
                       
                     </li> 
+                    <li id="jun-juneteenth" class="observances">
+                      June 19 - Juneteenth
+                    </li>
+                    <li id="jun-refugee" class="observances">
+                      June 20 - World Refugee Day
+                    </li>
+                    <li id="jun-solstice" class="observances">
+                      June 21 - Summer solstice
+                    </li>
+                    
                     <li id="jun-prideday" class="observances">
                       June 28 - Pride Day (date varies by city and country)
                     </li>
@@ -2432,7 +2458,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="2"><time>1</time></li>
+                    <li data-day="3"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -2606,7 +2632,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="5"><time>1</time></li>
+                    <li data-day="6"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -2789,7 +2815,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="1"><time>1</time></li>
+                    <li data-day="2"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -2842,6 +2868,10 @@
                   </div>
                   <div>
                     <p class="observance-heading">Important September Dates</p>
+                    
+                    <li id="sep-charity" class="observances">
+                      September 5 - International Day of Charity
+                    </li>
                     <li id="sep-labor" class="observances">
                       <script>
                         (function () {
@@ -2855,23 +2885,9 @@
                       </script>
 
                     </li>
-                    <li id="sep-charity" class="observances">
-                      September 5 - International Day of Charity
-                    </li>
+                    
                     <li id="sep-patriot" class="observances">
                       September 11 - Patriot Day (U.S.A.)
-                    </li>
-                    <li id="sep-democracy" class="observances">
-                      September 15 - International Day of Democracy
-                    </li>
-                    <li id="sep-mexican" class="observances">
-                      September 16 - Mexican Independence Day
-                    </li>
-                    <li id="sep-gratitude" class="observances">
-                      September 21 - World Gratitude Day
-                    </li>
-                    <li id="sep-peace" class="observances">
-                      September 21 - International Day of Peace
                     </li>
                     <li id="sep-rosh" class="observances">
                       <script>
@@ -2886,6 +2902,19 @@
                       </script>
 
                     </li>
+                    <li id="sep-democracy" class="observances">
+                      September 15 - International Day of Democracy
+                    </li>
+                    <li id="sep-mexican" class="observances">
+                      September 16 - Mexican Independence Day
+                    </li>
+                    <li id="sep-gratitude" class="observances">
+                      September 21 - World Gratitude Day
+                    </li>
+                    <li id="sep-peace" class="observances">
+                      September 21 - International Day of Peace
+                    </li>
+                    
                     <li id="sep-businesswomen" class="observances">
                       September 22 - American Business Women's Day
                     </li>
@@ -3082,7 +3111,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="3"><time>1</time></li>
+                    <li data-day="4"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -3663,7 +3692,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="6"><time>1</time></li>
+                    <li data-day="0"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -4002,7 +4031,7 @@
                 <section data-firstday="7" class="mx-auto">
                   <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="1"><time>1</time></li>
+                    <li data-day="2"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -4360,7 +4389,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="3"><time>1</time></li>
+                    <li data-day="4"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -4665,7 +4694,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day=6><time>1</time></li>
+                    <li data-day="0"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -4785,7 +4814,31 @@
                       </p>
                     </div>
                   </div>
-                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseEpilepsy" role="button">
+                    <script>
+                      (function () {
+                        const year = new Date().getFullYear();
+                        const dates = {
+                          2025: "February 10",
+                          2026: "February 9"
+                        };
+                        document.write(`${dates[year] || "Second Monday in February"} - International Epilepsy Day`);
+                      })();
+                    </script>
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseEpilepsy">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title"> International Epilepsy Day</p>
+                        <img src="images/feb/feb-epilepsy.png" class="info-picture">
+                      <p class="info-description">
+                        Started in 2015 and organized by the International Bureau for Epilepsy (IBE) and 
+                        the International League Against Epilepsy (ILAE), the day provides a platform for people with epilepsy to 
+                        share their experiences and stories with a global 
+                        audience. The day also calls for all people to advocate for appropriate legislation that will guarantee 
+                        human rights of people with epilepsy and encourages people with epilepsy to live to their fullest potential.
+                      </p>
+                    </div>
+                  </div> 
                   <li class="observances" data-bs-toggle="collapse" href="#collapseInternet" role="button">
                     <script>
                       (function () {
@@ -4828,31 +4881,7 @@
                     </div>
                   </div>
                   
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseEpilepsy" role="button">
-                    <script>
-                      (function () {
-                        const year = new Date().getFullYear();
-                        const dates = {
-                          2025: "February 10",
-                          2026: "February 9"
-                        };
-                        document.write(`${dates[year] || "Second Monday in February"} - International Epilepsy Day`);
-                      })();
-                    </script>
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseEpilepsy">
-                    <div class="info-card" style="margin-left: 20px; background: #F36;">
-                      <p class="info-title"> International Epilepsy Day</p>
-                        <img src="images/feb/feb-epilepsy.png" class="info-picture">
-                      <p class="info-description">
-                        Started in 2015 and organized by the International Bureau for Epilepsy (IBE) and 
-                        the International League Against Epilepsy (ILAE), the day provides a platform for people with epilepsy to 
-                        share their experiences and stories with a global 
-                        audience. The day also calls for all people to advocate for appropriate legislation that will guarantee 
-                        human rights of people with epilepsy and encourages people with epilepsy to live to their fullest potential.
-                      </p>
-                    </div>
-                  </div>    
+                     
                   <li class="observances" data-bs-toggle="collapse" href="#collapseValentines" role="button" aria-expanded="false" aria-controls="collapseValentines">
                     February 14 - Valentine's Day
                   </li>
@@ -4922,22 +4951,7 @@
                       </p>
                     </div>
                   </div> 
-                
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseJustice" role="button" aria-expanded="false" aria-controls="collapseJustice">
-                    February 20 - World Day of Social Justice
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseJustice">
-                    <div class="info-card" style="margin-left: 20px; background: #52B68A;">
-                      <p class="info-title"> World Day of Social Justice</p>
-                        <img src="images/feb/feb-justice.png" class="info-picture">
-                      <p class="info-description">
-                        World Day of Social Justice is an international day recognizing the need to promote social justice, 
-                        which includes efforts to tackle issues such as poverty, exclusion, gender inequality, unemployment, 
-                        human rights, and social protections.
-                      </p>
-                    </div>
-                  </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseRamadan" role="button">
+                <li class="observances" data-bs-toggle="collapse" href="#collapseRamadan" role="button">
                     <script>
                       (function () {
                         const year = new Date().getFullYear();
@@ -4961,6 +4975,21 @@
                       </p>
                     </div>
                   </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseJustice" role="button" aria-expanded="false" aria-controls="collapseJustice">
+                    February 20 - World Day of Social Justice
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseJustice">
+                    <div class="info-card" style="margin-left: 20px; background: #52B68A;">
+                      <p class="info-title"> World Day of Social Justice</p>
+                        <img src="images/feb/feb-justice.png" class="info-picture">
+                      <p class="info-description">
+                        World Day of Social Justice is an international day recognizing the need to promote social justice, 
+                        which includes efforts to tackle issues such as poverty, exclusion, gender inequality, unemployment, 
+                        human rights, and social protections.
+                      </p>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -4970,7 +4999,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                 <ol class="days">
-                  <li data-day=6><time>1</time></li>
+                  <li data-day="0"><time>1</time></li>
                   <li><time>2</time></li>
                   <li><time>3</time></li>
                   <li><time>4</time></li>
@@ -5137,6 +5166,46 @@
                 <div>
                   <p class="observance-heading" >Important March Dates</p>
                   
+                  <li class="observances" data-bs-toggle="collapse" href="#collapsePurim">
+                    <script>
+                      (function () {
+                        const year = new Date().getFullYear();
+                        const dates = { 2025: "March 14", 2026: "March 4" };
+                        document.write(`${dates[year] || "Date varies"} - Purim`);
+                      })();
+                    </script>
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapsePurim">
+                    <div class="info-card" style="margin-left: 20px; background: #EF3831;">
+                      <p class="info-title">Purim</p>
+                        <img src="images/mar/mar-purim.png" class="info-picture">
+                      <p class="info-description">
+                        Purim is a Jewish holiday that celebrates the survival of the Jewish people 
+                        in ancient Persia after their Persian rulers marked them for death in the 5th century BCE.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseHoli">
+                    <script>
+                      (function () {
+                        const year = new Date().getFullYear();
+                        const dates = { 2025: "March 14", 2026: "March 4" };
+                        document.write(`${dates[year] || "Date varies"} - Holi`);
+                      })();
+                    </script>
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseHoli">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title">Holi <!--(Hindu)--></p>
+                        <img src="images/mar/mar-holi.png" class="info-picture">
+                      <p class="info-description">
+                        Holi is a popular and significant Hindu festival celebrated as the Festival of Colors, 
+                        Love, and Spring. It celebrates the eternal and divine love of the deities Radha and Krishna. Additionally, the day signifies the triumph of good over evil, as it commemorates the 
+                        victory of Vishnu as Narasimha over Hiranyakashipu.
+                      </p>
+                    </div>
+                  </div>
+
                   <li class="observances" data-bs-toggle="collapse" href="#collapseEmployee">
                     <script>
                       (function () {
@@ -5191,28 +5260,7 @@
                       </p>
                     </div>
                   </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseEqual">
-                    <script>
-                      (function () {
-                        const year = new Date().getFullYear();
-                        const dates = { 2025: "March 25", 2026: "March 24" };
-                        document.write(`${dates[year] || "Date varies"} - Equal Pay Day`);
-                      })();
-                    </script>
-                  </li>
-
-                  <div class="collapse" style="padding-top: 10px;" id="collapseEqual">
-                    <div class="info-card" style="margin-left: 20px; background: #0C569F;">
-                      <p class="info-title">Equal Pay Day</p>
-                        <img src="images/mar/mar-equal.png" class="info-picture">
-                      <p class="info-description">
-                        The symbolic day was first observed in 1996 by the National Committee on Pay Equity, 
-                        a coalition of women's and civil rights organizations, labor unions, professional associations 
-                        and individuals working to eliminate sex and race 
-                        based wage discrimination and to achieve pay equity.
-                      </p>
-                    </div>
-                  </div>
+                  
                   
                   <li class="observances" data-bs-toggle="collapse" href="#collapsePatrick" role="button" aria-expanded="false" aria-controls="collapsePatrick">
                     March 17 - St. Patrick's Day
@@ -5226,77 +5274,6 @@
                         and is observed by the Catholic Church, the Anglican Communion (especially the Church of Ireland), 
                         the Eastern Orthodox Church, and the Lutheran Church. The day commemorates Saint Patrick and the 
                         arrival of Christianity in Ireland, and, by extension, celebrates the heritage and culture of the Irish in general.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseDown" role="button" aria-expanded="false" aria-controls="collapseDown">
-                    March 21 - World Down Syndrome Day
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseDown">
-                    <div class="info-card" style="margin-left: 20px; background: #A453C4;">
-                      <p class="info-title">World Down Syndrome Day</p>
-                        <img src="images/mar/mar-down.png" class="info-picture">
-                      <p class="info-description">
-                        Every year on March 21, World Down Syndrome Day is observed to create awareness 
-                        about Down syndrome. It is a condition in which a child is born with an extra 21st chromosome. 
-                        A common activity is wearing colorful or mismatched socks, 
-                        to show support for people with Down syndrome.
-                      </p>
-                    </div>
-                  </div>
-                 
-                  <li class="observances" data-bs-toggle="collapse" href="#collapsePurim">
-                    <script>
-                      (function () {
-                        const year = new Date().getFullYear();
-                        const dates = { 2025: "March 14", 2026: "March 4" };
-                        document.write(`${dates[year] || "Date varies"} - Purim`);
-                      })();
-                    </script>
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapsePurim">
-                    <div class="info-card" style="margin-left: 20px; background: #EF3831;">
-                      <p class="info-title">Purim</p>
-                        <img src="images/mar/mar-purim.png" class="info-picture">
-                      <p class="info-description">
-                        Purim is a Jewish holiday that celebrates the survival of the Jewish people 
-                        in ancient Persia after their Persian rulers marked them for death in the 5th century BCE.
-                      </p>
-                    </div>
-                  </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseHoli">
-                    <script>
-                      (function () {
-                        const year = new Date().getFullYear();
-                        const dates = { 2025: "March 14", 2026: "March 4" };
-                        document.write(`${dates[year] || "Date varies"} - Holi`);
-                      })();
-                    </script>
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseHoli">
-                    <div class="info-card" style="margin-left: 20px; background: #F36;">
-                      <p class="info-title">Holi <!--(Hindu)--></p>
-                        <img src="images/mar/mar-holi.png" class="info-picture">
-                      <p class="info-description">
-                        Holi is a popular and significant Hindu festival celebrated as the Festival of Colors, 
-                        Love, and Spring. It celebrates the eternal and divine love of the deities Radha and Krishna. Additionally, the day signifies the triumph of good over evil, as it commemorates the 
-                        victory of Vishnu as Narasimha over Hiranyakashipu.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseSlave" role="button" aria-expanded="false" aria-controls="collapseSlave">
-                    March 25 - International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseSlave">
-                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
-                      <p class="info-title">International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade</p>
-                        <img src="images/mar/mar-slave.png" class="info-picture">
-                      <p class="info-description">
-                        The day honours and remembers those who suffered and died as a consequence of the transatlantic slave trade, 
-                        which has been called "the worst violation of human rights in history", in which over 400 years more than 
-                        15 million men, women and children were the victims.
                       </p>
                     </div>
                   </div>
@@ -5343,20 +5320,6 @@
                       </p>
                     </div>
                   </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseTransgender" role="button" aria-expanded="false" aria-controls="collapseTransgender">
-                     March 31 - International Transgender Day of Visibility
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseTransgender">
-                    <div class="info-card" style="margin-left: 20px; background: #F36;">
-                      <p class="info-title">International Transgender Day of Visibility</p>
-                        <img src="images/mar/mar-transgender.png" class="info-picture">
-                      <p class="info-description">
-                        An annual event occurring on March 31 dedicated to celebrating transgender people and raising awareness 
-                        of discrimination faced by transgender people worldwide, as well as a celebration of their contributions 
-                        to society.
-                      </p>
-                    </div>
-                  </div>
                   <li class="observances" data-bs-toggle="collapse" href="#collapseAlFitr">
                     <script>
                       (function () {
@@ -5377,6 +5340,76 @@
                       </p>
                     </div>
                   </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseDown" role="button" aria-expanded="false" aria-controls="collapseDown">
+                    March 21 - World Down Syndrome Day
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseDown">
+                    <div class="info-card" style="margin-left: 20px; background: #A453C4;">
+                      <p class="info-title">World Down Syndrome Day</p>
+                        <img src="images/mar/mar-down.png" class="info-picture">
+                      <p class="info-description">
+                        Every year on March 21, World Down Syndrome Day is observed to create awareness 
+                        about Down syndrome. It is a condition in which a child is born with an extra 21st chromosome. 
+                        A common activity is wearing colorful or mismatched socks, 
+                        to show support for people with Down syndrome.
+                      </p>
+                    </div>
+                  </div>
+                 
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseEqual">
+                    <script>
+                      (function () {
+                        const year = new Date().getFullYear();
+                        const dates = { 2025: "March 25", 2026: "March 24" };
+                        document.write(`${dates[year] || "Date varies"} - Equal Pay Day`);
+                      })();
+                    </script>
+                  </li>
+
+                  <div class="collapse" style="padding-top: 10px;" id="collapseEqual">
+                    <div class="info-card" style="margin-left: 20px; background: #0C569F;">
+                      <p class="info-title">Equal Pay Day</p>
+                        <img src="images/mar/mar-equal.png" class="info-picture">
+                      <p class="info-description">
+                        The symbolic day was first observed in 1996 by the National Committee on Pay Equity, 
+                        a coalition of women's and civil rights organizations, labor unions, professional associations 
+                        and individuals working to eliminate sex and race 
+                        based wage discrimination and to achieve pay equity.
+                      </p>
+                    </div>
+                  </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseSlave" role="button" aria-expanded="false" aria-controls="collapseSlave">
+                    March 25 - International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseSlave">
+                    <div class="info-card" style="margin-left: 20px; background: #3D62E6;">
+                      <p class="info-title">International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade</p>
+                        <img src="images/mar/mar-slave.png" class="info-picture">
+                      <p class="info-description">
+                        The day honours and remembers those who suffered and died as a consequence of the transatlantic slave trade, 
+                        which has been called "the worst violation of human rights in history", in which over 400 years more than 
+                        15 million men, women and children were the victims.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseTransgender" role="button" aria-expanded="false" aria-controls="collapseTransgender">
+                     March 31 - International Transgender Day of Visibility
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseTransgender">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title">International Transgender Day of Visibility</p>
+                        <img src="images/mar/mar-transgender.png" class="info-picture">
+                      <p class="info-description">
+                        An annual event occurring on March 31 dedicated to celebrating transgender people and raising awareness 
+                        of discrimination faced by transgender people worldwide, as well as a celebration of their contributions 
+                        to society.
+                      </p>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -5521,42 +5554,7 @@
                 </div>
                 <div>
                 <p class="observance-heading">Important April Dates</p>
-                  
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseAutismDay" role="button" aria-expanded="false" aria-controls="collapseAutismDay">
-                    April 2 - World Autism Awareness Day
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseAutismDay">
-                    <div class="info-card" style="margin-left: 20px; background: #E8EBEE;">
-                      <p class="info-title" style="color: black">World Autism Awareness Day</p>
-                      <img src="images/apr/apr-autismday.png" class="info-picture">
-                      <p class="info-description" style="color: black">
-                        World Autism Awareness Day is an internationally recognized day annually on April 2, 
-                        encouraging Member States of the United Nations to take measures to raise awareness about 
-                        autistic individuals throughout the world.
-                      </p>
-                    </div>
-                  </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseSilence" role="button" aria-expanded="false" aria-controls="collapseSilence">
-                    <script>
-                      (function () {
-                        const year = new Date().getFullYear();
-                        const dates = { 2025: "April 11", 2026: "April 10" };
-                        document.write(`${dates[year] || "Second Friday"} - National Day of Silence`);
-                      })();
-                    </script>
-                  </li>
-                  
-                  <div class="collapse" style="padding-top: 10px;" id="collapseSilence">
-                    <div class="info-card" style="margin-left: 20px; background: #F36;">
-                      <p class="info-title">National Day of Silence</p>
-                      <img src="images/apr/apr-silence.png" class="info-picture">
-                      <p class="info-description">
-                        Day of Silence is GLSEN's annual day of action to spread awareness about the effects of the 
-                        bullying and harassment of lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) students.
-                      </p>
-                    </div>
-                  </div>
-                   <li class="observances" data-bs-toggle="collapse" href="#collapsePassover" role="button" aria-expanded="false" aria-controls="collapsePassover">
+                  <li class="observances" data-bs-toggle="collapse" href="#collapsePassover" role="button" aria-expanded="false" aria-controls="collapsePassover">
                     <script>
                       (function () {
                         const year = new Date().getFullYear();
@@ -5576,23 +5574,20 @@
                       </p>
                     </div>
                   </div>
-                  <!--
-                  <li class="observances" data-bs-toggle="collapse" href="#collapsePalm" role="button" aria-expanded="false" aria-controls="collapsePalm">
-                    April 13 - Palm Sunday
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseAutismDay" role="button" aria-expanded="false" aria-controls="collapseAutismDay">
+                    April 2 - World Autism Awareness Day
                   </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapsePalm">
-                    <div class="info-card" style="margin-left: 20px; background: #AB331F;">
-                      <p class="info-title">Palm Sunday</p>
-                      <img src="images/mar/mar-palm.png" class="info-picture">
-                      <p class="info-description">
-                        Palm Sunday is a Christian celebration that marks the beginning of Holy Week, 
-                        the final week of Lent leading up to Easter Sunday. It commemorates Jesus Christ's 
-                        triumphant entry into Jerusalem, an event described in the Gospels 
-                        (particularly in the books of Matthew, Mark, Luke, and John).
+                  <div class="collapse" style="padding-top: 10px;" id="collapseAutismDay">
+                    <div class="info-card" style="margin-left: 20px; background: #E8EBEE;">
+                      <p class="info-title" style="color: black">World Autism Awareness Day</p>
+                      <img src="images/apr/apr-autismday.png" class="info-picture">
+                      <p class="info-description" style="color: black">
+                        World Autism Awareness Day is an internationally recognized day annually on April 2, 
+                        encouraging Member States of the United Nations to take measures to raise awareness about 
+                        autistic individuals throughout the world.
                       </p>
                     </div>
                   </div>
-                  -->
 
                   <li class="observances" data-bs-toggle="collapse" href="#collapseFriday" role="button" aria-expanded="false" aria-controls="collapseFriday">
                     <script>
@@ -5637,6 +5632,46 @@
                       </p>
                     </div>
                   </div>
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseSilence" role="button" aria-expanded="false" aria-controls="collapseSilence">
+                    <script>
+                      (function () {
+                        const year = new Date().getFullYear();
+                        const dates = { 2025: "April 11", 2026: "April 10" };
+                        document.write(`${dates[year] || "Second Friday"} - National Day of Silence`);
+                      })();
+                    </script>
+                  </li>
+                  
+                  <div class="collapse" style="padding-top: 10px;" id="collapseSilence">
+                    <div class="info-card" style="margin-left: 20px; background: #F36;">
+                      <p class="info-title">National Day of Silence</p>
+                      <img src="images/apr/apr-silence.png" class="info-picture">
+                      <p class="info-description">
+                        Day of Silence is GLSEN's annual day of action to spread awareness about the effects of the 
+                        bullying and harassment of lesbian, gay, bisexual, transgender, queer, and questioning (LGBTQ) students.
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <!--
+                  <li class="observances" data-bs-toggle="collapse" href="#collapsePalm" role="button" aria-expanded="false" aria-controls="collapsePalm">
+                    April 13 - Palm Sunday
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapsePalm">
+                    <div class="info-card" style="margin-left: 20px; background: #AB331F;">
+                      <p class="info-title">Palm Sunday</p>
+                      <img src="images/mar/mar-palm.png" class="info-picture">
+                      <p class="info-description">
+                        Palm Sunday is a Christian celebration that marks the beginning of Holy Week, 
+                        the final week of Lent leading up to Easter Sunday. It commemorates Jesus Christ's 
+                        triumphant entry into Jerusalem, an event described in the Gospels 
+                        (particularly in the books of Matthew, Mark, Luke, and John).
+                      </p>
+                    </div>
+                  </div>
+                  -->
+
+                  
 
                   <li class="observances" data-bs-toggle="collapse" href="#collapseRidvan" role="button" aria-expanded="false" aria-controls="collapseRidvan">
                     April 20 - Start of Ridvan
@@ -5692,7 +5727,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                 <ol class="days">
-                  <li data-day="4"><time>1</time></li>
+                  <li data-day="5"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -5947,7 +5982,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="0"><time>1</time></li>
+                    <li data-day="1"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -6099,6 +6134,30 @@
                       </p>
                     </div>
                   </div>
+
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseAlHijra" role="button" aria-expanded="false" aria-controls="collapseAlHijra">
+                    <script>
+                      (function () {
+                        const year = new Date().getFullYear();
+                        const dates = { 2025: "June 26", 2026: "June 16" };
+                        document.write(`${dates[year] || "Date varies"} - Muharram`);
+                      })();
+                    </script>
+                  
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseAlHijra">
+                    <div class="info-card" style="margin-left: 20px; background: #3B84BA;">
+                      <p class="info-title">Muharram</p>
+                      <img src="images/jul/jul-muharram.png" class="info-picture">
+                      <p class="info-description">
+                        Muharram, also known as the Islamic or Hijri New Year, marks the beginning of the Islamic lunar calendar. 
+                        It commemorates the migration (Hijra) of the Prophet Muhammad and his followers from Mecca to Medina in 622 CE. 
+                        This migration was a pivotal event in Islamic history, leading to the establishment of the first Muslim community 
+                        and the beginning of the Islamic calendar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                  <li class="observances" data-bs-toggle="collapse" href="#collapseJuneteenth" role="button" aria-expanded="false" aria-controls="collapseJuneteenth">
                   June 19 - Juneteenth
                   </li>
@@ -6146,29 +6205,7 @@
                       </p>
                     </div>
                   </div>
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseAlHijra" role="button" aria-expanded="false" aria-controls="collapseAlHijra">
-                    <script>
-                      (function () {
-                        const year = new Date().getFullYear();
-                        const dates = { 2025: "June 26", 2026: "June 16" };
-                        document.write(`${dates[year] || "Date varies"} - Muharram`);
-                      })();
-                    </script>
                   
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseAlHijra">
-                    <div class="info-card" style="margin-left: 20px; background: #3B84BA;">
-                      <p class="info-title">Muharram</p>
-                      <img src="images/jul/jul-muharram.png" class="info-picture">
-                      <p class="info-description">
-                        Muharram, also known as the Islamic or Hijri New Year, marks the beginning of the Islamic lunar calendar. 
-                        It commemorates the migration (Hijra) of the Prophet Muhammad and his followers from Mecca to Medina in 622 CE. 
-                        This migration was a pivotal event in Islamic history, leading to the establishment of the first Muslim community 
-                        and the beginning of the Islamic calendar.
-                      </p>
-                    </div>
-                  </div>
-                </div>
                 <li class="observances" data-bs-toggle="collapse" href="#collapsePrideDay" role="button" aria-expanded="false" aria-controls="collapsePrideDay">
                   June 28 - Pride Day (date varies by city and country)
                   </li>
@@ -6193,7 +6230,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="2"><time>1</time></li>
+                    <li data-day="3"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -6335,7 +6372,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="5"><time>1</time></li>
+                    <li data-day="6"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -6514,7 +6551,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                 <ol class="days">
-                  <li data-day="1"><time>1</time></li>
+                  <li data-day="2"><time>1</time></li>
                   <li><time>2</time></li>
                   <li><time>3</time></li>
                   <li><time>4</time></li>
@@ -6603,6 +6640,22 @@
                 </div>
                 <div>
                   <p class="observance-heading">Important September Dates</p>
+                  
+                      
+                  <li class="observances" data-bs-toggle="collapse" href="#collapseCharity" role="button" aria-expanded="false" aria-controls="collapseCharity">
+                    September 5 - International Day of Charity
+                  </li>
+                  <div class="collapse" style="padding-top: 10px;" id="collapseCharity">
+                    <div class="info-card" style="margin-left: 20px; background: #F25252;">
+                      <p class="info-title">International Day of Charity</p>
+                      <img src="images/sep/sep-charity.png" class="info-picture">
+                      <p class="info-description">
+                        Charity, like the notions of volunteerism and philanthropy, provides real social bonding and 
+                        contributes to the creation of inclusive and more resilient societies. 
+                        International Day of Charity is celebrated the whole month of September.
+                      </p>
+                    </div>
+                  </div>
                   <li id="sep-labor-mob" class="observances" data-bs-toggle="collapse" href="#collapseLabor" role="button" aria-expanded="false" aria-controls="collapseLabor">
                     <script>
                       (function () {
@@ -6624,22 +6677,6 @@
                       </p>
                     </div>
                   </div>
-                      
-                  <li class="observances" data-bs-toggle="collapse" href="#collapseCharity" role="button" aria-expanded="false" aria-controls="collapseCharity">
-                    September 5 - International Day of Charity
-                  </li>
-                  <div class="collapse" style="padding-top: 10px;" id="collapseCharity">
-                    <div class="info-card" style="margin-left: 20px; background: #F25252;">
-                      <p class="info-title">International Day of Charity</p>
-                      <img src="images/sep/sep-charity.png" class="info-picture">
-                      <p class="info-description">
-                        Charity, like the notions of volunteerism and philanthropy, provides real social bonding and 
-                        contributes to the creation of inclusive and more resilient societies. 
-                        International Day of Charity is celebrated the whole month of September.
-                      </p>
-                    </div>
-                  </div>
-                  
                   <li class="observances" data-bs-toggle="collapse" href="#collapsePatriot" role="button" aria-expanded="false" aria-controls="collapsePatriot">
                     September 11 - Patriot Day (U.S.A.)
                   </li>
@@ -6775,7 +6812,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="3"><time>1</time></li>
+                    <li data-day="4"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -7213,7 +7250,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="6"><time>1</time></li>
+                    <li data-day="0"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
@@ -7490,7 +7527,7 @@
               <section data-firstday="7" class="mx-auto">
                 <ul class="days"><li><abbr>Sun</abbr></li><li><abbr>Mon</abbr></li><li><abbr>Tue</abbr></li><li><abbr>Wed</abbr></li><li><abbr>Thu</abbr></li><li><abbr>Fri</abbr></li><li><abbr>Sat</abbr></li></ul>
                   <ol class="days">
-                    <li data-day="1"><time>1</time></li>
+                    <li data-day="2"><time>1</time></li>
                     <li><time>2</time></li>
                     <li><time>3</time></li>
                     <li><time>4</time></li>
